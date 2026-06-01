@@ -1,2 +1,12 @@
 .idea/
 .venv/
+pass.yaml
+# Python
+__pycache__/
+*.py[cod]
+
+# macOS
+.DS_Store
+
+# Local tools
+.qwen/
