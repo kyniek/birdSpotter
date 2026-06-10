@@ -36,8 +36,8 @@ def identify_or_create_flock(
             MATCH (f:Flock)-[:LAST_REPORT]->(r:Report)
             WHERE r.timestamp >= datetime($ts) - duration({hours: $silence})
             RETURN f.id AS flock_id,
-                   r.latitude AS lat,
-                   r.longitude AS lon,
+                   r.location.y AS lat,
+                   r.location.x AS lon,
                    r.timestamp AS ts
             ORDER BY r.timestamp DESC
             """,
@@ -79,8 +79,7 @@ def identify_or_create_flock(
             CREATE (f:Flock {id: $flock_id})
             CREATE (r:Report {
                 id: $report_id,
-                latitude: $lat,
-                longitude: $lon,
+                location: point({latitude: $lat, longitude: $lon}),
                 timestamp: datetime($ts)
             })
             CREATE (f)-[:HAS_REPORT]->(r)
@@ -124,8 +123,7 @@ def add_report_and_get_flock_info(
                 MATCH (f:Flock {id: $flock_id})
                 CREATE (r:Report {
                     id: $report_id,
-                    latitude: $lat,
-                    longitude: $lon,
+                    location: point({latitude: $lat, longitude: $lon}),
                     timestamp: datetime($ts)
                 })
                 CREATE (f)-[:HAS_REPORT]->(r)
@@ -142,7 +140,7 @@ def add_report_and_get_flock_info(
             session.run(
                 """
                 MATCH (f:Flock {id: $flock_id})-[:HAS_REPORT]->(r:Report)
-                SET r.latitude = $lat, r.longitude = $lon, r.timestamp = datetime($ts)
+                SET r.location = point({latitude: $lat, longitude: $lon}), r.timestamp = datetime($ts)
                 """,
                 flock_id=flock_id,
                 lat=lat,
@@ -189,7 +187,7 @@ def add_report_and_get_flock_info(
         result = session.run(
             """
             MATCH (f:Flock {id: $flock_id})-[:HAS_REPORT]->(r:Report)
-            RETURN r.latitude AS lat, r.longitude AS lon, r.timestamp AS ts
+            RETURN r.location.y AS lat, r.location.x AS lon, r.timestamp AS ts
             ORDER BY r.timestamp DESC
             LIMIT 2
             """,
@@ -217,7 +215,7 @@ def predict_city(lat: float, lon: float, bearing: float) -> tuple[str, float] | 
         result = session.run(
             """
             MATCH (c:City)
-            RETURN c.name AS name, c.latitude AS lat, c.longitude AS lon
+            RETURN c.name AS name, c.location.y AS lat, c.location.x AS lon
             """
         )
 

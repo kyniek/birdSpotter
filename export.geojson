@@ -2,7 +2,7 @@
   "type": "FeatureCollection",
   "generator": "overpass-turbo",
   "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
-  "timestamp": "2026-06-07T22:35:30Z",
+  "timestamp": "2026-06-10T11:28:13Z",
   "features": [
     {
       "type": "Feature",
@@ -76,44 +76,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/31174958",
-        "is_in:county": "powiat skarżyski",
-        "is_in:municipality": "gmina Skarżysko-Kamienna",
-        "is_in:province": "województwo świętokrzyskie",
-        "name": "Skarżysko-Kamienna",
-        "name:bg": "Скаржиско-Каменна",
-        "name:he": "סקרז'יסקו-קמיינה",
-        "name:lt": "Skaržyskas-Kamena",
-        "name:lv": "Skaržisko-Kamenna",
-        "name:pl": "Skarżysko-Kamienna",
-        "name:ru": "Скаржиско-Каменна",
-        "name:sr": "Скаржиско-Камјена",
-        "name:uk": "Скаржисько-Каменна",
-        "name:zh": "斯卡日斯科-卡緬納",
-        "place": "town",
-        "population": "41793",
-        "population:date": "2023-07-20",
-        "postal_code": "26-110",
-        "source:population": "https://stat.gov.pl/obszary-tematyczne/ludnosc/ludnosc/powierzchnia-i-ludnosc-w-przekroju-terytorialnym-w-2023-roku,7,20.html",
-        "teryt:rm": "96",
-        "teryt:simc": "0947716",
-        "teryt:stan_na": "2009-01-01",
-        "teryt:updated_by": "teryt2osm combine.py v. 49",
-        "wikidata": "Q644002",
-        "wikipedia": "pl:Skarżysko-Kamienna"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          20.857883,
-          51.1138821
-        ]
-      },
-      "id": "node/31174958"
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "@id": "node/31864701",
         "description": "Miasto od 1 stycznia 2025",
         "name": "Wąwolnica",
@@ -174,100 +136,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/31865372",
-        "name": "Suchedniów",
-        "name:he": "סוחדניוב",
-        "name:lv": "Suhedņova",
-        "name:pl": "Suchedniów",
-        "name:ru": "Сухеднюв",
-        "name:sr": "Сухедњов",
-        "name:uk": "Сухеднюв",
-        "name:zh": "蘇海德紐夫",
-        "place": "town",
-        "population": "7588",
-        "population:date": "2023-07-20",
-        "postal_code": "26-130",
-        "source:population": "https://stat.gov.pl/obszary-tematyczne/ludnosc/ludnosc/powierzchnia-i-ludnosc-w-przekroju-terytorialnym-w-2023-roku,7,20.html",
-        "teryt:rm": "96",
-        "teryt:simc": "0948360",
-        "teryt:stan_na": "2009-01-01",
-        "teryt:updated_by": "teryt2osm combine.py v. 49",
-        "wikidata": "Q1946041",
-        "wikipedia": "pl:Suchedniów"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          20.8386652,
-          51.0472338
-        ]
-      },
-      "id": "node/31865372"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/31865852",
-        "is_in:county": "powiat konecki",
-        "is_in:municipality": "gmina Stąporków",
-        "is_in:province": "województwo świętokrzyskie",
-        "name": "Stąporków",
-        "name:fr": "Staporkow",
-        "name:lv": "Stamporkova",
-        "name:pl": "Stąporków",
-        "name:ru": "Стомпоркув",
-        "name:sr": "Стомпорков",
-        "name:uk": "Стомпоркув",
-        "place": "town",
-        "population": "5165",
-        "population:date": "2023-07-20",
-        "postal_code": "26-220",
-        "source:population": "https://stat.gov.pl/obszary-tematyczne/ludnosc/ludnosc/powierzchnia-i-ludnosc-w-przekroju-terytorialnym-w-2023-roku,7,20.html",
-        "teryt:simc": "0948271",
-        "wikidata": "Q671366",
-        "wikipedia": "pl:Stąporków"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          20.5573073,
-          51.1380145
-        ]
-      },
-      "id": "node/31865852"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/31867712",
-        "name": "Radoszyce",
-        "name:pl": "Radoszyce",
-        "name:ru": "Радошице",
-        "name:uk": "Радошице",
-        "place": "town",
-        "population": "2874",
-        "population:date": "2023-07-20",
-        "postal_code": "26-230",
-        "source:population": "https://stat.gov.pl/obszary-tematyczne/ludnosc/ludnosc/powierzchnia-i-ludnosc-w-przekroju-terytorialnym-w-2023-roku,7,20.html",
-        "teryt:rm": "96",
-        "teryt:simc": "0264986",
-        "teryt:stan_na": "2009-01-01",
-        "teryt:updated_by": "teryt2osm combine.py v. 43",
-        "wikidata": "Q3141156",
-        "wikipedia": "pl:Radoszyce"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          20.2597677,
-          51.0736699
-        ]
-      },
-      "id": "node/31867712"
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "@id": "node/31867745",
         "multi_postcode_place": "yes",
         "name": "Radom",
@@ -304,32 +172,6 @@
         ]
       },
       "id": "node/31867745"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/31867854",
-        "description": "Miasto od 1 stycznia 2024",
-        "name": "Przytyk",
-        "name:ru": "Пшитык",
-        "place": "town",
-        "population": "1384",
-        "population:date": "2024-01-01",
-        "postal_code": "26-650",
-        "source:population": "wikipedia",
-        "teryt:rm": "96",
-        "teryt:simc": "0634348",
-        "wikidata": "Q600023",
-        "wikipedia": "pl:Przytyk"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          20.9055732,
-          51.4668994
-        ]
-      },
-      "id": "node/31867854"
     },
     {
       "type": "Feature",
@@ -399,62 +241,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/31869732",
-        "name": "Opoczno",
-        "name:lt": "Opočnas",
-        "name:pl": "Opoczno",
-        "name:ru": "Опочно",
-        "name:sr": "Опочно",
-        "name:uk": "Опочно",
-        "place": "town",
-        "population": "19738",
-        "population:date": "2021-06-30",
-        "postal_code": "26-300",
-        "source:population": "Narodowy Spis Powszechny 2021",
-        "teryt:rm": "96",
-        "teryt:simc": "0967943",
-        "teryt:stan_na": "2009-01-01",
-        "teryt:terc": "1007044",
-        "teryt:updated_by": "teryt2osm combine.py v. 49",
-        "wikidata": "Q994271",
-        "wikipedia": "pl:Opoczno"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          20.2931754,
-          51.3782439
-        ]
-      },
-      "id": "node/31869732"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/31869968",
-        "description": "Miasto od 1 stycznia 2024",
-        "name": "Odrzywół",
-        "place": "town",
-        "population": "1300",
-        "postal_code": "26-425",
-        "source:population": "wikipedia",
-        "teryt:rm": "96",
-        "teryt:simc": "0630110",
-        "wikidata": "Q2043183",
-        "wikipedia": "pl:Odrzywół (powiat przysuski)"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          20.555818,
-          51.5193078
-        ]
-      },
-      "id": "node/31869968"
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "@id": "node/31870825",
         "name": "Nałęczów",
         "name:etymology:wikidata": "Q1785126",
@@ -513,37 +299,6 @@
         ]
       },
       "id": "node/31873964"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/31874770",
-        "name": "Końskie",
-        "name:lt": "Konskiai",
-        "name:pl": "Końskie",
-        "name:ru": "Коньске",
-        "name:sr": "Коњскје",
-        "name:uk": "Конське",
-        "place": "town",
-        "population": "17629",
-        "population:date": "2023-07-20",
-        "postal_code": "26-200",
-        "source:population": "https://stat.gov.pl/obszary-tematyczne/ludnosc/ludnosc/powierzchnia-i-ludnosc-w-przekroju-terytorialnym-w-2023-roku,7,20.html",
-        "teryt:rm": "96",
-        "teryt:simc": "0947136",
-        "teryt:stan_na": "2009-01-01",
-        "teryt:updated_by": "teryt2osm combine.py v. 49",
-        "wikidata": "Q776499",
-        "wikipedia": "pl:Końskie"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          20.4071836,
-          51.1910223
-        ]
-      },
-      "id": "node/31874770"
     },
     {
       "type": "Feature",
@@ -608,56 +363,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/31876136",
-        "description": "Nadane prawa miejskie od 1 stycznia 2023",
-        "name": "Jastrząb",
-        "place": "town",
-        "population": "1102",
-        "population:date": "2023-07-20",
-        "postal_code": "26-502",
-        "source:population": "https://stat.gov.pl/obszary-tematyczne/ludnosc/ludnosc/powierzchnia-i-ludnosc-w-przekroju-terytorialnym-w-2023-roku,7,20.html",
-        "teryt:rm": "96",
-        "teryt:simc": "0623988",
-        "teryt:stan_na": "2023-01-01",
-        "wikidata": "Q929504",
-        "wikipedia": "pl:Jastrząb (powiat szydłowiecki)"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          20.9468572,
-          51.2467635
-        ]
-      },
-      "id": "node/31876136"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/31876426",
-        "description": "Miasto od 1 stycznia 2024",
-        "name": "Inowłódz",
-        "place": "town",
-        "population": "795",
-        "postal_code": "97-215",
-        "source:population": "wikipedia",
-        "teryt:rm": "96",
-        "teryt:simc": "0540989",
-        "wikidata": "Q1898628",
-        "wikipedia": "pl:Inowłódz"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          20.2228852,
-          51.5236969
-        ]
-      },
-      "id": "node/31876426"
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "@id": "node/31876427",
         "name": "Iłża",
         "name:pl": "Iłża",
@@ -689,54 +394,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/31876774",
-        "description": "Miasto od 1 stycznia 2024",
-        "name": "Gowarczów",
-        "name:sr": "Говарчов",
-        "place": "town",
-        "population": "1400",
-        "postal_code": "26-225",
-        "source:population": "wikipedia",
-        "teryt:rm": "96",
-        "teryt:simc": "0620659",
-        "wikidata": "Q2599348",
-        "wikipedia": "pl:Gowarczów"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          20.438142,
-          51.2784974
-        ]
-      },
-      "id": "node/31876774"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/31876987",
-        "name": "Gielniów",
-        "place": "town",
-        "population": "1100",
-        "postal_code": "26-434",
-        "source:population": "wikipedia",
-        "teryt:rm": "96",
-        "teryt:simc": "0618817",
-        "wikidata": "Q2441134",
-        "wikipedia": "pl:Gielniów"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          20.4762225,
-          51.3997224
-        ]
-      },
-      "id": "node/31876987"
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "@id": "node/31877510",
         "description": "Miasto od 1 stycznia 2024",
         "name": "Ciepielów",
@@ -758,31 +415,6 @@
         ]
       },
       "id": "node/31877510"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/31878125",
-        "description": "Miasto od 1 stycznia 2024",
-        "name": "Białaczów",
-        "name:sr": "Бјалачов",
-        "place": "town",
-        "population": "1500",
-        "postal_code": "26-307",
-        "source:population": "wikipedia",
-        "teryt:rm": "96",
-        "teryt:simc": "0536350",
-        "wikidata": "Q4902737",
-        "wikipedia": "pl:Białaczów"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          20.2949544,
-          51.298466
-        ]
-      },
-      "id": "node/31878125"
     },
     {
       "type": "Feature",
@@ -811,58 +443,6 @@
         ]
       },
       "id": "node/31878133"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/31886965",
-        "name": "Wodzisław",
-        "name:ru": "Водзислав",
-        "place": "town",
-        "population": "981",
-        "population:date": "2023-07-20",
-        "postal_code": "28-330",
-        "source:population": "https://stat.gov.pl/obszary-tematyczne/ludnosc/ludnosc/powierzchnia-i-ludnosc-w-przekroju-terytorialnym-w-2023-roku,7,20.html",
-        "teryt:rm": "96",
-        "teryt:simc": "0279686",
-        "wikidata": "Q2917229",
-        "wikipedia": "pl:Wodzisław"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          20.1909163,
-          50.5211403
-        ]
-      },
-      "id": "node/31886965"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/31887175",
-        "name": "Wiślica",
-        "name:ru": "Вислица",
-        "place": "town",
-        "population": "468",
-        "population:date": "2023-07-20",
-        "postal_code": "28-160",
-        "source:population": "https://stat.gov.pl/obszary-tematyczne/ludnosc/ludnosc/powierzchnia-i-ludnosc-w-przekroju-terytorialnym-w-2023-roku,7,20.html",
-        "teryt:rm": "96",
-        "teryt:simc": "0277470",
-        "teryt:stan_na": "2009-01-01",
-        "teryt:updated_by": "teryt2osm combine.py v. 43",
-        "wikidata": "Q945288",
-        "wikipedia": "pl:Wiślica"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          20.6745381,
-          50.3484831
-        ]
-      },
-      "id": "node/31887175"
     },
     {
       "type": "Feature",
@@ -938,33 +518,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/31888190",
-        "name": "Stopnica",
-        "name:pl": "Stopnica",
-        "name:ru": "Стопница",
-        "name:sr": "Стопница",
-        "place": "town",
-        "population": "1150",
-        "population:date": "2023-07-20",
-        "postal_code": "28-130",
-        "source:population": "https://stat.gov.pl/obszary-tematyczne/ludnosc/ludnosc/powierzchnia-i-ludnosc-w-przekroju-terytorialnym-w-2023-roku,7,20.html",
-        "teryt:rm": "96",
-        "teryt:simc": "0272951",
-        "wikidata": "Q986052",
-        "wikipedia": "pl:Stopnica"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          20.9385676,
-          50.4382587
-        ]
-      },
-      "id": "node/31888190"
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "@id": "node/31888252",
         "name": "Staszów",
         "name:he": "סטשוב",
@@ -1023,52 +576,33 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/31888390",
-        "description": "Prawa Miejskie od 1 stycznia 2025",
-        "name": "Sobków",
+        "@id": "node/31888565",
+        "is_in:county": "powiat ropczycko-sędziszowski",
+        "is_in:municipality": "gmina Sędziszów Małopolski",
+        "is_in:province": "województwo podkarpackie",
+        "name": "Sędziszów Małopolski",
+        "name:pl": "Sędziszów Małopolski",
+        "name:ru": "Сендзишув-Малопольски",
+        "name:sr": "Сенђишов Малополски",
+        "name:uk": "Сендзішув-Малопольський",
         "place": "town",
-        "population": "870",
-        "postal_code": "28-305",
-        "source:population": "wikipedia",
-        "teryt:simc": "0270604"
+        "population": "12313",
+        "population:date": "2021-06-30",
+        "postal_code": "39-120",
+        "source:population": "Narodowy Spis Powszechny 2021",
+        "teryt:simc": "0974937",
+        "teryt:terc": "1815044",
+        "wikidata": "Q867704",
+        "wikipedia": "pl:Sędziszów Małopolski"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          20.4543922,
-          50.6987193
+          21.7007524,
+          50.0715996
         ]
       },
-      "id": "node/31888390"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/31888513",
-        "name": "Skalbmierz",
-        "name:pl": "Skalbmierz",
-        "name:ru": "Скальбмеж",
-        "name:sr": "Скалбмјеж",
-        "place": "town",
-        "population": "1202",
-        "population:date": "2023-07-20",
-        "postal_code": "28-530",
-        "source:population": "https://stat.gov.pl/obszary-tematyczne/ludnosc/ludnosc/powierzchnia-i-ludnosc-w-przekroju-terytorialnym-w-2023-roku,7,20.html",
-        "teryt:rm": "96",
-        "teryt:simc": "0947627",
-        "teryt:stan_na": "2009-01-01",
-        "teryt:updated_by": "teryt2osm combine.py v. 49",
-        "wikidata": "Q1813609",
-        "wikipedia": "pl:Skalbmierz"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          20.3996843,
-          50.3170888
-        ]
-      },
-      "id": "node/31888513"
+      "id": "node/31888565"
     },
     {
       "type": "Feature",
@@ -1117,6 +651,69 @@
     {
       "type": "Feature",
       "properties": {
+        "@id": "node/31888768",
+        "is_in:county": "powiat ropczycko-sędziszowski",
+        "is_in:municipality": "gmina Ropczyce",
+        "is_in:province": "województwo podkarpackie",
+        "name": "Ropczyce",
+        "name:de": "Ropschitze",
+        "name:pl": "Ropczyce",
+        "name:ru": "Ропчице",
+        "name:sr": "Ропчице",
+        "name:uk": "Ропчиці",
+        "place": "town",
+        "population": "15815",
+        "population:date": "2021-06-30",
+        "postal_code": "39-100",
+        "source:population": "Narodowy Spis Powszechny 2021",
+        "teryt:simc": "0974825",
+        "teryt:terc": "1815034",
+        "wikidata": "Q336375",
+        "wikipedia": "pl:Ropczyce"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.6116324,
+          50.0528608
+        ]
+      },
+      "id": "node/31888768"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/31888900",
+        "name": "Przeworsk",
+        "name:pl": "Przeworsk",
+        "name:ru": "Пшеворск",
+        "name:sr": "Пшеворск",
+        "name:uk": "Переворськ",
+        "place": "town",
+        "population": "14881",
+        "population:date": "2021-06-30",
+        "postal_code": "37-200",
+        "source:population": "Narodowy Spis Powszechny 2021",
+        "teryt:rm": "96",
+        "teryt:simc": "0972513",
+        "teryt:stan_na": "2009-01-01",
+        "teryt:terc": "1814011",
+        "teryt:updated_by": "teryt2osm combine.py v. 49",
+        "wikidata": "Q983875",
+        "wikipedia": "pl:Przeworsk"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.4923769,
+          50.0601735
+        ]
+      },
+      "id": "node/31888900"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "@id": "node/31889018",
         "is_in:county": "powiat staszowski",
         "is_in:municipality": "gmina Połaniec",
@@ -1147,90 +744,6 @@
         ]
       },
       "id": "node/31889018"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/31889135",
-        "is_in:county": "powiat pińczowski",
-        "is_in:municipality": "gmina Pińczów",
-        "is_in:province": "województwo świętokrzyskie",
-        "name": "Pińczów",
-        "name:lt": "Pinčuvas",
-        "name:pl": "Pińczów",
-        "name:ru": "Пиньчув",
-        "name:sr": "Пињчов",
-        "name:uk": "Пінчув",
-        "place": "town",
-        "population": "9843",
-        "population:date": "2023-07-20",
-        "postal_code": "28-400",
-        "source:population": "https://stat.gov.pl/obszary-tematyczne/ludnosc/ludnosc/powierzchnia-i-ludnosc-w-przekroju-terytorialnym-w-2023-roku,7,20.html",
-        "teryt:rm": "96",
-        "teryt:simc": "0947580",
-        "teryt:stan_na": "2009-01-01",
-        "teryt:updated_by": "teryt2osm combine.py v. 49",
-        "wikidata": "Q275592",
-        "wikipedia": "pl:Pińczów"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          20.5256241,
-          50.5201929
-        ]
-      },
-      "id": "node/31889135"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/31889148",
-        "name": "Pierzchnica",
-        "name:ru": "Пежхница",
-        "name:uk": "П'єжхніца",
-        "place": "town",
-        "population": "1257",
-        "population:date": "2023-07-20",
-        "postal_code": "26-015",
-        "source:population": "https://stat.gov.pl/obszary-tematyczne/ludnosc/ludnosc/powierzchnia-i-ludnosc-w-przekroju-terytorialnym-w-2023-roku,7,20.html",
-        "teryt:rm": "96",
-        "teryt:simc": "0262310",
-        "wikidata": "Q3079381",
-        "wikipedia": "pl:Pierzchnica"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          20.7544258,
-          50.6974266
-        ]
-      },
-      "id": "node/31889148"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/31889160",
-        "name": "Piekoszów",
-        "place": "town",
-        "population": "2942",
-        "population:date": "2023-07-20",
-        "postal_code": "26-065",
-        "source:population": "https://stat.gov.pl/obszary-tematyczne/ludnosc/ludnosc/powierzchnia-i-ludnosc-w-przekroju-terytorialnym-w-2023-roku,7,20.html",
-        "teryt:rm": "96",
-        "teryt:simc": "0261746",
-        "wikidata": "Q2439211",
-        "wikipedia": "pl:Piekoszów"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          20.4642464,
-          50.881422
-        ]
-      },
-      "id": "node/31889160"
     },
     {
       "type": "Feature",
@@ -1351,32 +864,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/31889594",
-        "name": "Nowy Korczyn",
-        "name:ru": "Новы Корчин",
-        "name:sr": "Нови Корчин",
-        "name:uk": "Новий Корчин",
-        "place": "town",
-        "population": "904",
-        "population:date": "2023-07-20",
-        "postal_code": "28-136",
-        "source:population": "https://stat.gov.pl/obszary-tematyczne/ludnosc/ludnosc/powierzchnia-i-ludnosc-w-przekroju-terytorialnym-w-2023-roku,7,20.html",
-        "teryt:simc": "0256142",
-        "wikidata": "Q1008390",
-        "wikipedia": "pl:Nowy Korczyn"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          20.8090569,
-          50.2994316
-        ]
-      },
-      "id": "node/31889594"
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "@id": "node/31889683",
         "name": "Nowa Słupia",
         "name:ru": "Нова Слупя",
@@ -1465,34 +952,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/31889932",
-        "name": "Morawica",
-        "name:ru": "Моравица",
-        "name:sr": "Моравица",
-        "name:uk": "Моравіца",
-        "place": "town",
-        "population": "1782",
-        "population:date": "2023-07-20",
-        "postal_code": "26-026",
-        "source:population": "https://stat.gov.pl/obszary-tematyczne/ludnosc/ludnosc/powierzchnia-i-ludnosc-w-przekroju-terytorialnym-w-2023-roku,7,20.html",
-        "teryt:simc": "0254226",
-        "teryt:stan_na": "2009-01-01",
-        "teryt:updated_by": "teryt2osm combine.py v. 43",
-        "wikidata": "Q2778284",
-        "wikipedia": "pl:Morawica"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          20.618127,
-          50.7478149
-        ]
-      },
-      "id": "node/31889932"
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "@id": "node/31890133",
         "description": "Miasto założone przez Jana i Bernardyna Mieleckich 18 XI 1470 r. Od połowy XIX w. regionalne centrum społeczno-gospodarcze. Szczególny wpływ na rozwój miały lotnictwo i motoryzacja. Tutejsze WSK Mielec produkowało m.in. samoloty i samochody.",
         "name": "Mielec",
@@ -1524,65 +983,6 @@
         ]
       },
       "id": "node/31890133"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/31890647",
-        "is_in:county": "powiat jędrzejowski",
-        "is_in:municipality": "gmina Małogoszcz",
-        "is_in:province": "województwo świętokrzyskie",
-        "name": "Małogoszcz",
-        "name:pl": "Małogoszcz",
-        "name:ru": "Малогощ",
-        "name:sr": "Малогошч",
-        "name:uk": "Малоґощ",
-        "place": "town",
-        "population": "3399",
-        "population:date": "2023-07-20",
-        "postal_code": "28-366",
-        "source:population": "https://stat.gov.pl/obszary-tematyczne/ludnosc/ludnosc/powierzchnia-i-ludnosc-w-przekroju-terytorialnym-w-2023-roku,7,20.html",
-        "teryt:rm": "96",
-        "teryt:simc": "0249343",
-        "teryt:stan_na": "2009-01-01",
-        "teryt:updated_by": "teryt2osm combine.py v. 49",
-        "wikidata": "Q592809",
-        "wikipedia": "pl:Małogoszcz"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          20.2648324,
-          50.8123487
-        ]
-      },
-      "id": "node/31890647"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/31891198",
-        "name": "Łopuszno",
-        "name:pl": "Łopuszno",
-        "name:sr": "Лопушно",
-        "place": "town",
-        "population": "1427",
-        "population:date": "2023-07-20",
-        "postal_code": "26-070",
-        "source:population": "https://stat.gov.pl/obszary-tematyczne/ludnosc/ludnosc/powierzchnia-i-ludnosc-w-przekroju-terytorialnym-w-2023-roku,7,20.html",
-        "teryt:rm": "96",
-        "teryt:simc": "0248622",
-        "wikidata": "Q2475995",
-        "wikipedia": "pl:Łopuszno"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          20.2505964,
-          50.948616
-        ]
-      },
-      "id": "node/31891198"
     },
     {
       "type": "Feature",
@@ -1619,30 +1019,41 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/31891620",
-        "name": "Łaszczów",
-        "name:ru": "Лащув",
-        "name:sr": "Лашчов",
-        "name:uk": "Лащув",
+        "@id": "node/31891667",
+        "name": "Łańcut",
+        "name:be": "Ланьцут",
+        "name:bg": "Ланцут",
+        "name:de": "Landshut",
+        "name:he": "לנצוט",
+        "name:ko": "완추트",
+        "name:lv": "Laņcuta",
+        "name:pl": "Łańcut",
+        "name:ru": "Ланьцут",
+        "name:sr": "Лањцут",
+        "name:uk": "Ланьцут",
+        "name:yi": "לאנצהוט",
+        "name:zh": "万楚特",
         "place": "town",
-        "population": "2010",
+        "population": "17768",
         "population:date": "2021-06-30",
-        "postal_code": "22-650",
+        "postal_code": "37-100",
         "source:population": "Narodowy Spis Powszechny 2021",
         "teryt:rm": "96",
-        "teryt:simc": "0893742",
-        "teryt:terc": "0618064",
-        "wikidata": "Q2167485",
-        "wikipedia": "pl:Łaszczów"
+        "teryt:simc": "0974529",
+        "teryt:stan_na": "2009-01-01",
+        "teryt:terc": "1810011",
+        "teryt:updated_by": "teryt2osm combine.py v. 49",
+        "wikidata": "Q345331",
+        "wikipedia": "pl:Łańcut"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          23.7263929,
-          50.532615
+          22.2320924,
+          50.0690725
         ]
       },
-      "id": "node/31891620"
+      "id": "node/31891667"
     },
     {
       "type": "Feature",
@@ -1671,34 +1082,6 @@
         ]
       },
       "id": "node/31891739"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/31892394",
-        "name": "Krasnobród",
-        "name:pl": "Krasnobród",
-        "name:ru": "Краснобруд",
-        "name:sr": "Красноброд",
-        "name:uk": "Краснобруд",
-        "place": "town",
-        "population": "3013",
-        "population:date": "2021-06-30",
-        "postal_code": "22-440",
-        "source:population": "Narodowy Spis Powszechny 2021",
-        "teryt:simc": "0891281",
-        "teryt:terc": "0620044",
-        "wikidata": "Q999623",
-        "wikipedia": "pl:Krasnobród"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          23.2115593,
-          50.5460046
-        ]
-      },
-      "id": "node/31892394"
     },
     {
       "type": "Feature",
@@ -1791,70 +1174,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/31893519",
-        "is_in:county": "powiat kazimierski",
-        "is_in:municipality": "gmina Kazimierza Wielka",
-        "is_in:province": "województwo świętokrzyskie",
-        "name": "Kazimierza Wielka",
-        "name:pl": "Kazimierza Wielka",
-        "name:ru": "Казимежа-Велька",
-        "name:sr": "Казимјежа Вјелка",
-        "name:uk": "Казімежа Велька",
-        "place": "town",
-        "population": "5038",
-        "population:date": "2023-07-20",
-        "postal_code": "28-500",
-        "source:population": "https://stat.gov.pl/obszary-tematyczne/ludnosc/ludnosc/powierzchnia-i-ludnosc-w-przekroju-terytorialnym-w-2023-roku,7,20.html",
-        "teryt:rm": "96",
-        "teryt:simc": "0947076",
-        "teryt:stan_na": "2009-01-01",
-        "teryt:updated_by": "teryt2osm combine.py v. 49",
-        "wikidata": "Q1406641",
-        "wikipedia": "pl:Kazimierza Wielka"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          20.4853308,
-          50.267489
-        ]
-      },
-      "id": "node/31893519"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/31894002",
-        "is_in": "powiat jędrzejowski, województwo świętokrzyskie, Poland",
-        "is_in:county": "powiat jędrzejowski",
-        "is_in:municipality": "gmina Jędrzejów",
-        "is_in:province": "województwo świętokrzyskie",
-        "name": "Jędrzejów",
-        "name:pl": "Jędrzejów",
-        "name:ru": "Енджеув",
-        "name:sr": "Јенджејов",
-        "name:uk": "Єнджеюв",
-        "place": "town",
-        "population": "14308",
-        "population:date": "2023-07-20",
-        "postal_code": "28-300",
-        "source:population": "https://stat.gov.pl/obszary-tematyczne/ludnosc/ludnosc/powierzchnia-i-ludnosc-w-przekroju-terytorialnym-w-2023-roku,7,20.html",
-        "teryt:simc": "0947030",
-        "wikidata": "Q249259",
-        "wikipedia": "pl:Jędrzejów"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          20.3046116,
-          50.6394435
-        ]
-      },
-      "id": "node/31894002"
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "@id": "node/31894302",
         "name": "Iwaniska",
         "name:ru": "Иваниска",
@@ -1881,59 +1200,103 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/31895302",
-        "is_in:county": "powiat pińczowski",
-        "is_in:municipality": "gmina Działoszyce",
-        "is_in:province": "województwo świętokrzyskie",
-        "name": "Działoszyce",
-        "name:pl": "Działoszyce",
-        "name:ru": "Дзялошице",
-        "name:sr": "Ђалошице",
-        "name:uk": "Дзялошице",
+        "@id": "node/31894993",
+        "name": "Głogów Małopolski",
+        "name:pl": "Głogów Małopolski",
+        "name:ru": "Глогув-Малопольский",
+        "name:sr": "Глогов Малополски",
+        "name:uk": "Глогув-Малопольський",
         "place": "town",
-        "population": "852",
-        "population:date": "2023-07-20",
-        "postal_code": "28-440",
-        "source:population": "https://stat.gov.pl/obszary-tematyczne/ludnosc/ludnosc/powierzchnia-i-ludnosc-w-przekroju-terytorialnym-w-2023-roku,7,20.html",
-        "teryt:simc": "0946987",
-        "wikidata": "Q571185",
-        "wikipedia": "pl:Działoszyce"
+        "population": "10232",
+        "population:date": "2021-06-30",
+        "postal_code": "36-060",
+        "source:population": "Narodowy Spis Powszechny 2021",
+        "teryt:simc": "0974328",
+        "teryt:terc": "1816064",
+        "wikidata": "Q1025309",
+        "wikipedia": "pl:Głogów Małopolski"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          20.3521471,
-          50.3654682
+          21.9627571,
+          50.1511809
         ]
       },
-      "id": "node/31895302"
+      "id": "node/31894993"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/31896315",
-        "name": "Daleszyce",
-        "name:pl": "Daleszyce",
-        "name:ru": "Далешице",
-        "name:sr": "Далешице",
-        "name:uk": "Далешице",
+        "@id": "node/31895072",
+        "name": "Dębica",
+        "name:de": "Dembitza",
+        "name:lt": "Dembica",
+        "name:pl": "Dębica",
+        "name:ru": "Дембица",
+        "name:sr": "Дембица",
+        "name:uk": "Дембиця",
         "place": "town",
-        "population": "2781",
-        "population:date": "2023-07-20",
-        "postal_code": "26-021",
-        "source:population": "https://stat.gov.pl/obszary-tematyczne/ludnosc/ludnosc/powierzchnia-i-ludnosc-w-przekroju-terytorialnym-w-2023-roku,7,20.html",
-        "teryt:simc": "0236429",
-        "wikidata": "Q2507925",
-        "wikipedia": "pl:Daleszyce"
+        "population": "44047",
+        "population:date": "2021-06-30",
+        "postal_code": "39-200",
+        "source:population": "Narodowy Spis Powszechny 2021",
+        "teryt:rm": "96",
+        "teryt:simc": "0982233",
+        "teryt:stan_na": "2009-01-01",
+        "teryt:terc": "1803011",
+        "teryt:updated_by": "teryt2osm combine.py v. 49",
+        "wikidata": "Q947404",
+        "wikipedia": "pl:Dębica"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          20.8066334,
-          50.801991
+          21.4104804,
+          50.0514601
         ]
       },
-      "id": "node/31896315"
+      "id": "node/31895072"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/31896633",
+        "is_in:county": "powiat dąbrowski",
+        "is_in:municipality": "gmina Dąbrowa Tarnowska",
+        "is_in:province": "województwo małopolskie",
+        "name": "Dąbrowa Tarnowska",
+        "name:bg": "Домброва Тарновска",
+        "name:he": "דומברובה טרנובסקה",
+        "name:ja": "ドンブロヴァ・タルノフスカ",
+        "name:lv": "Dombrova Tarnovska",
+        "name:nl": "Dąbrowa Tarnowska (stad)",
+        "name:pl": "Dąbrowa Tarnowska",
+        "name:ru": "Домброва-Тарновска",
+        "name:sr": "Домброва Тарновска",
+        "name:uk": "Домброва-Тарновська",
+        "name:zh": "塔爾努夫的棟布羅瓦",
+        "place": "town",
+        "population": "11549",
+        "population:date": "2021-06-30",
+        "postal_code": "33-200",
+        "source:population": "Narodowy Spis Powszechny 2021",
+        "teryt:rm": "96",
+        "teryt:simc": "0982167",
+        "teryt:stan_na": "2009-01-01",
+        "teryt:terc": "1204024",
+        "teryt:updated_by": "teryt2osm combine.py v. 49",
+        "wikidata": "Q324971",
+        "wikipedia": "pl:Dąbrowa Tarnowska"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.9850707,
+          50.1743495
+        ]
+      },
+      "id": "node/31896633"
     },
     {
       "type": "Feature",
@@ -1961,70 +1324,6 @@
         ]
       },
       "id": "node/31897710"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/31897853",
-        "is_in:county": "powiat lubaczowski",
-        "is_in:municipality": "gmina Cieszanów",
-        "is_in:province": "województwo podkarpackie",
-        "name": "Cieszanów",
-        "name:pl": "Cieszanów",
-        "name:ru": "Цешанув",
-        "name:sr": "Ћешанов",
-        "name:uk": "Цешанув",
-        "place": "town",
-        "population": "1867",
-        "population:date": "2021-06-30",
-        "postal_code": "37-611",
-        "source:population": "Narodowy Spis Powszechny 2021",
-        "teryt:simc": "0972051",
-        "teryt:terc": "1809024",
-        "wikidata": "Q653855",
-        "wikipedia": "pl:Cieszanów"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          23.1301265,
-          50.2454329
-        ]
-      },
-      "id": "node/31897853"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/31898571",
-        "is_in:county": "powiat buski",
-        "is_in:municipality": "gmina Busko-Zdrój",
-        "is_in:province": "województwo świętokrzyskie",
-        "name": "Busko-Zdrój",
-        "name:pl": "Busko-Zdrój",
-        "name:ru": "Буско-Здруй",
-        "name:sr": "Буско-Здрој",
-        "name:uk": "Буско Здруй",
-        "place": "town",
-        "population": "14588",
-        "population:date": "2023-07-20",
-        "postal_code": "28-100",
-        "source:population": "https://stat.gov.pl/obszary-tematyczne/ludnosc/ludnosc/powierzchnia-i-ludnosc-w-przekroju-terytorialnym-w-2023-roku,7,20.html",
-        "teryt:rm": "96",
-        "teryt:simc": "0946651",
-        "teryt:stan_na": "2009-01-01",
-        "teryt:updated_by": "teryt2osm combine.py v. 49",
-        "wikidata": "Q256782",
-        "wikipedia": "pl:Busko-Zdrój"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          20.71919,
-          50.46759
-        ]
-      },
-      "id": "node/31898571"
     },
     {
       "type": "Feature",
@@ -2113,167 +1412,336 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/105491400",
-        "is_in:county": "powiat opoczyński",
-        "is_in:municipality": "gmina Drzewica",
-        "is_in:province": "województwo łódzkie",
-        "name": "Drzewica",
-        "name:pl": "Drzewica",
-        "name:ru": "Джевица",
-        "name:sr": "Джевица",
-        "name:uk": "Джевиця",
+        "@id": "node/31945412",
+        "is_in:county": "powiat rzeszowski",
+        "is_in:municipality": "gmina Tyczyn",
+        "is_in:province": "województwo podkarpackie",
+        "name": "Tyczyn",
+        "name:pl": "Tyczyn",
+        "name:ru": "Тычин",
+        "name:sr": "Тичињ",
+        "name:uk": "Тичин",
         "place": "town",
-        "population": "3616",
+        "population": "4325",
         "population:date": "2021-06-30",
-        "postal_code": "26-340",
+        "postal_code": "36-020",
         "source:population": "Narodowy Spis Powszechny 2021",
         "teryt:rm": "96",
-        "teryt:simc": "0973346",
+        "teryt:simc": "0975078",
         "teryt:stan_na": "2009-01-01",
-        "teryt:terc": "1007024",
+        "teryt:terc": "1816144",
         "teryt:updated_by": "teryt2osm combine.py v. 49",
-        "wikidata": "Q1005409",
-        "wikipedia": "pl:Drzewica (województwo łódzkie)"
+        "wikidata": "Q1946067",
+        "wikipedia": "pl:Tyczyn"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          20.4773617,
-          51.4508384
+          22.0336719,
+          49.9637919
         ]
       },
-      "id": "node/105491400"
+      "id": "node/31945412"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/197471072",
-        "name": "Krasnystaw",
-        "name:lt": "Krasnystavas",
-        "name:pl": "Krasnystaw",
-        "name:ru": "Красныстав",
-        "name:sr": "Краснистав",
-        "name:uk": "Красностав",
+        "@id": "node/31945638",
+        "name": "Tuchów",
+        "name:pl": "Tuchów",
+        "name:ru": "Тухув",
+        "name:sr": "Тухов",
+        "name:uk": "Тухув",
         "place": "town",
-        "population": "17855",
+        "population": "6339",
         "population:date": "2021-06-30",
-        "postal_code": "22-300",
+        "postal_code": "33-170",
         "source:population": "Narodowy Spis Powszechny 2021",
-        "teryt:rm": "96",
-        "teryt:simc": "0930070",
-        "teryt:stan_na": "2009-01-01",
-        "teryt:terc": "0606011",
-        "teryt:updated_by": "teryt2osm combine.py v. 49",
-        "wikidata": "Q155088",
-        "wikipedia": "pl:Krasnystaw"
+        "teryt:simc": "0982457",
+        "teryt:terc": "1216104",
+        "wikidata": "Q1922294",
+        "wikipedia": "pl:Tuchów"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          23.1697933,
-          50.982996
+          21.0538362,
+          49.895219
         ]
       },
-      "id": "node/197471072"
+      "id": "node/31945638"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/253543591",
-        "name": "Chełm",
-        "name:ar": "تشيلم",
-        "name:be": "Хэлм",
-        "name:bg": "Хелм",
-        "name:de": "Cholm",
-        "name:el": "Χέουμ",
-        "name:fa": "خه‌اوم",
-        "name:he": "חלם",
-        "name:ja": "ヘウム",
-        "name:ko": "헤움",
-        "name:lt": "Chelmas",
-        "name:lv": "Helma",
-        "name:mk": "Хелм",
-        "name:ml": "കെൽം",
-        "name:os": "Хелм",
-        "name:pl": "Chełm",
-        "name:ru": "Хелм",
-        "name:sr": "Хелм",
-        "name:tt": "Хелм",
-        "name:uk": "Холм",
-        "name:yi": "כעלם",
-        "name:zh": "海乌姆",
-        "place": "city",
-        "population": "59546",
+        "@id": "node/31948552",
+        "is_in:county": "powiat strzyżowski",
+        "is_in:municipality": "gmina Strzyżów",
+        "is_in:province": "województwo podkarpackie",
+        "name": "Strzyżów",
+        "name:de": "Strezow",
+        "name:pl": "Strzyżów",
+        "name:ru": "Стшижув",
+        "name:sr": "Стшижов",
+        "name:uk": "Стрижів",
+        "place": "town",
+        "population": "8588",
         "population:date": "2021-06-30",
-        "postal_code": "22-100",
+        "postal_code": "38-100",
         "source:population": "Narodowy Spis Powszechny 2021",
-        "teryt:rm": "96",
-        "teryt:simc": "0929902",
-        "teryt:stan_na": "2009-01-01",
-        "teryt:terc": "0662011",
-        "wikidata": "Q234184",
-        "wikipedia": "pl:Chełm"
+        "teryt:simc": "0975010",
+        "teryt:terc": "1819044",
+        "wikidata": "Q835423",
+        "wikipedia": "pl:Strzyżów"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          23.4711548,
-          51.1339221
+          21.7856291,
+          49.8702087
         ]
       },
-      "id": "node/253543591"
+      "id": "node/31948552"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/253548556",
-        "is_in:country_code": "PL",
-        "name": "Zamość",
-        "name:ar": "زاموسك",
-        "name:be": "Замасць",
-        "name:cs": "Zámostí",
-        "name:de": "Zamosch",
-        "name:en": "Zamość",
-        "name:es": "Zamość",
-        "name:fa": "زاموشچ",
-        "name:fr": "Zamość",
-        "name:he": "זמושץ'",
-        "name:ja": "ザモシチ",
-        "name:la": "Zamoscia",
-        "name:lt": "Zamostė",
-        "name:lv": "Zamosca",
-        "name:mk": "Замошќ",
-        "name:ml": "സാമൊശ്ച്",
-        "name:pl": "Zamość",
-        "name:ru": "Замосць",
-        "name:sr": "Замошћ",
-        "name:uk": "Замостя",
-        "name:yi": "זאמאשטש",
-        "name:zh": "扎莫希奇",
-        "note:de": "name:de=deutscher Name und sonst nichts!",
-        "old_name:de": "Himmlerstadt",
+        "@id": "node/34662230",
+        "alt_name:uk": "Же́шув",
+        "multi_postcode_place": "yes",
+        "name": "Rzeszów",
+        "name:ar": "جيشوف",
+        "name:az": "Jeşuv",
+        "name:be": "Жэшаў",
+        "name:bg": "Жешов",
+        "name:crh": "Jeşuv",
+        "name:cs": "Řešov",
+        "name:de": "Resche",
+        "name:el": "Ζέσουφ",
+        "name:fa": "ژشوف",
+        "name:fr": "Rzeszów",
+        "name:he": "ז'שוב",
+        "name:hr": "Rzeszów",
+        "name:hy": "Ժեշուվ",
+        "name:ja": "ジェシュフ",
+        "name:ko": "제슈프",
+        "name:la": "Resovia",
+        "name:lt": "Žešuvas",
+        "name:lv": "Žešova",
+        "name:mk": "Жешув",
+        "name:ml": "ജെഷുഫ്",
+        "name:mn": "Жешув",
+        "name:mr": "झेशुफ",
+        "name:os": "Жешув",
+        "name:pl": "Rzeszów",
+        "name:ru": "Жешув",
+        "name:sk": "Rzeszów",
+        "name:sq": "Reshov",
+        "name:sr": "Жешов",
+        "name:szl": "Rzeszůw",
+        "name:th": "แชชุฟ",
+        "name:tt": "Жешув",
+        "name:uk": "Ряшів",
+        "name:ur": "ژیشوف",
+        "name:yi": "רײַשע",
+        "name:zh": "热舒夫",
         "place": "city",
-        "population": "60148",
+        "population": "195871",
         "population:date": "2021-06-30",
-        "postal_code": "22-400",
         "source:population": "Narodowy Spis Powszechny 2021",
-        "start_date": "1580",
         "teryt:rm": "96",
-        "teryt:simc": "0987510",
+        "teryt:simc": "0974133",
         "teryt:stan_na": "2009-01-01",
-        "teryt:terc": "0664011",
+        "teryt:terc": "1863011",
         "teryt:updated_by": "teryt2osm combine.py v. 49",
-        "wikidata": "Q145972",
-        "wikipedia": "pl:Zamość"
+        "wikidata": "Q598",
+        "wikipedia": "pl:Rzeszów"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          23.2525711,
-          50.7170854
+          22.0047174,
+          50.0374531
         ]
       },
-      "id": "node/253548556"
+      "id": "node/34662230"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/34811728",
+        "name": "Tarnów",
+        "name:ar": "تارنوف",
+        "name:be": "Тарнаў",
+        "name:bg": "Тарнов",
+        "name:cs": "Tarnov",
+        "name:de": "Tarnau",
+        "name:el": "Τάρνουφ",
+        "name:en": "Tarnów",
+        "name:fa": "تارنوف",
+        "name:he": "טרנוב",
+        "name:hr": "Tarnów",
+        "name:hy": "Տարնուվ",
+        "name:ja": "タルヌフ",
+        "name:ka": "ტარნუვი",
+        "name:ko": "타르누프",
+        "name:lt": "Tarnuvas",
+        "name:lv": "Tarnova",
+        "name:mk": "Тарнув",
+        "name:ml": "ടാർനുഫ്",
+        "name:os": "Тарнув",
+        "name:pl": "Tarnów",
+        "name:ru": "Тарнув",
+        "name:sk": "Tarnov",
+        "name:sr": "Тарнов",
+        "name:szl": "Tarnůw",
+        "name:tt": "Тарнув",
+        "name:uk": "Тарнув",
+        "name:yi": "טארנע",
+        "name:zh": "塔爾努夫",
+        "place": "city",
+        "population": "106259",
+        "population:date": "2021-06-30",
+        "postal_code": "33-100",
+        "source:population": "Narodowy Spis Powszechny 2021",
+        "teryt:rm": "96",
+        "teryt:simc": "0981570",
+        "teryt:stan_na": "2009-01-01",
+        "teryt:terc": "1263011",
+        "teryt:updated_by": "teryt2osm combine.py v. 49",
+        "wikidata": "Q106281",
+        "wikipedia": "pl:Tarnów"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.9880739,
+          50.0123784
+        ]
+      },
+      "id": "node/34811728"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/38403574",
+        "is_in": "gmina Brzostek, powiat dębicki, województwo podkarpackie, Poland",
+        "is_in:county": "powiat dębicki",
+        "is_in:municipality": "gmina Brzostek",
+        "is_in:province": "województwo podkarpackie",
+        "name": "Brzostek",
+        "name:pl": "Brzostek",
+        "name:ru": "Бжостек",
+        "name:sr": "Бжостек",
+        "name:uk": "Бжостек",
+        "place": "town",
+        "population": "2722",
+        "population:date": "2021-06-30",
+        "postal_code": "39-230",
+        "source:population": "Narodowy Spis Powszechny 2021",
+        "teryt:simc": "0814493",
+        "teryt:terc": "1803024",
+        "wikidata": "Q776418",
+        "wikipedia": "pl:Brzostek"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.411865,
+          49.8784697
+        ]
+      },
+      "id": "node/38403574"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/96021504",
+        "is_in:county": "powiat jarosławski",
+        "is_in:municipality": "gmina Jarosław",
+        "is_in:province": "województwo podkarpackie",
+        "name": "Jarosław",
+        "name:de": "Jaroslau",
+        "name:lt": "Jaroslavas",
+        "name:pl": "Jarosław",
+        "name:ru": "Ярослав",
+        "name:sr": "Јарослав",
+        "name:uk": "Ярослав",
+        "place": "town",
+        "population": "36303",
+        "population:date": "2021-06-30",
+        "postal_code": "37-500",
+        "source:population": "Narodowy Spis Powszechny 2021",
+        "teryt:rm": "96",
+        "teryt:simc": "0972192",
+        "teryt:stan_na": "2009-01-01",
+        "teryt:terc": "1804011",
+        "teryt:updated_by": "teryt2osm combine.py v. 49",
+        "wikidata": "Q721928",
+        "wikipedia": "pl:Jarosław (województwo podkarpackie)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.6796573,
+          50.0159029
+        ]
+      },
+      "id": "node/96021504"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/253546793",
+        "name": "Przemyśl",
+        "name:ar": "برزيميسل",
+        "name:az": "Pirzamisil",
+        "name:be": "Пшэмысль",
+        "name:bg": "Пшемишъл",
+        "name:cs": "Přemyšl",
+        "name:da": "Przemysl",
+        "name:de": "Przemysl",
+        "name:el": "Πσέμισλ",
+        "name:fa": "پرزمیسی",
+        "name:he": "פשמישל",
+        "name:ja": "プシェムィシル",
+        "name:ka": "ფშემისლი",
+        "name:ko": "프셰미실",
+        "name:la": "Premislia",
+        "name:lt": "Peremyšlis",
+        "name:lv": "Pšemisla",
+        "name:mk": "Пшемишл",
+        "name:ml": "പ്ഷെമിഷ്ൽ",
+        "name:os": "Пшемысль",
+        "name:pl": "Przemyśl",
+        "name:ru": "Пшемысль",
+        "name:sr": "Пшемисл",
+        "name:th": "ปแชมึชล์",
+        "name:tt": "Пшемысль",
+        "name:uk": "Перемишль",
+        "name:yi": "פשעמישל",
+        "name:zh": "普热梅希尔",
+        "place": "city",
+        "population": "58408",
+        "population:date": "2021-06-30",
+        "postal_code": "37-700",
+        "source:population": "Narodowy Spis Powszechny 2021",
+        "teryt:rm": "96",
+        "teryt:simc": "0971672",
+        "teryt:stan_na": "2009-01-01",
+        "teryt:terc": "1862011",
+        "teryt:updated_by": "teryt2osm combine.py v. 49",
+        "wikidata": "Q208473",
+        "wikipedia": "pl:Przemyśl"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.7698454,
+          49.7845132
+        ]
+      },
+      "id": "node/253546793"
     },
     {
       "type": "Feature",
@@ -2320,201 +1788,42 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/277724666",
-        "name": "Zwierzyniec",
-        "name:ar": "زفيجنتس",
-        "name:be": "Звяжынец",
-        "name:cs": "Zvěřinec",
-        "name:lv": "Zvežiņeca",
-        "name:pl": "Zwierzyniec",
-        "name:ru": "Звежинец",
-        "name:sr": "Звјежињец",
-        "name:szl": "Zwjerzińec",
-        "name:uk": "Зв'єжинець",
-        "name:zh": "茲維日涅茨",
+        "@id": "node/337549574",
+        "katotth": "UA46080050020013973",
+        "koatuu": "4625155400",
+        "name": "Нижанковичі",
+        "name:crh": "Nıjankovıçi",
+        "name:de": "Nyschankowytschi",
+        "name:en": "Nyzhankovychi",
+        "name:fr": "Nyjankovytchi",
+        "name:hr": "Nižankoviči",
+        "name:hy": "Նիժանկովիչի",
+        "name:it": "Nyžankovyči",
+        "name:ko": "니잔코비치",
+        "name:pl": "Niżankowice",
+        "name:prefix": "селище міського типу",
+        "name:ro": "Nîjankovîci",
+        "name:ru": "Нижанковичи",
+        "name:uk": "Нижанковичі",
+        "name:zh": "尼然科维奇",
+        "old_name": "Nižankoviči;Nishankowitschi;Nizhankovichi",
+        "old_name:pl": "Krasnopol",
+        "old_name:uk": "Краснопіль",
         "place": "town",
-        "population": "2918",
-        "population:date": "2021-06-30",
-        "postal_code": "22-470",
-        "source:population": "Narodowy Spis Powszechny 2021",
-        "teryt:rm": "96",
-        "teryt:simc": "0988253",
-        "teryt:terc": "0620154",
-        "wikidata": "Q1946056",
-        "wikipedia": "pl:Zwierzyniec (powiat zamojski)"
+        "population": "1824",
+        "population:date": "01.01.2011",
+        "postal_code": "82011",
+        "wikidata": "Q1020050",
+        "wikipedia": "uk:Нижанковичі"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          22.9706317,
-          50.6145878
+          22.8079515,
+          49.6759019
         ]
       },
-      "id": "node/277724666"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/337523383",
-        "katotth": "UA46120010020094201",
-        "koatuu": "4624810900",
-        "name": "Угнів",
-        "name:de": "Uhniw",
-        "name:en": "Uhniv",
-        "name:fa": "اونوف",
-        "name:fr": "Ouhniv",
-        "name:he": "אוהנוב",
-        "name:hr": "Uhniv",
-        "name:hsb": "Uhniw",
-        "name:ko": "우흐니우",
-        "name:lv": "Uhņiva",
-        "name:pl": "Uhnów",
-        "name:prefix": "місто",
-        "name:ru": "Угнев",
-        "name:uk": "Угнів",
-        "name:zh": "烏格尼夫",
-        "old_name": "Ugnev;Ugnew;Ugniew;Ugniv;Uhnow",
-        "old_name:ru": "Угнов",
-        "place": "town",
-        "population": "997",
-        "postal_code": "80065",
-        "wikidata": "Q156812",
-        "wikipedia": "uk:Угнів"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          23.7470971,
-          50.367231
-        ]
-      },
-      "id": "node/337523383"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/337526329",
-        "alt_name:fr": "Rawa Ruska",
-        "katotth": "UA46060390010035472",
-        "koatuu": "4622710400",
-        "name": "Рава-Руська",
-        "name:be": "Рава-Руская",
-        "name:ce": "Рава-Русски",
-        "name:cs": "Rava-Ruska",
-        "name:da": "Rava-Ruska",
-        "name:de": "Rawa-Ruska",
-        "name:en": "Rava-Ruska",
-        "name:eo": "Rava-Ruska",
-        "name:es": "Rava-Ruska",
-        "name:et": "Rava-Ruska",
-        "name:fa": "راوا-روسکا",
-        "name:fi": "Rava-Ruska",
-        "name:fr": "Rava-Rouska",
-        "name:he": "רווה-רוסקה",
-        "name:hr": "Rava-Ruska",
-        "name:hy": "Ռավա-Ռուսկայա",
-        "name:it": "Rava-Rus'ka",
-        "name:ka": "რავა-რუსკა",
-        "name:ko": "라바루스카",
-        "name:lv": "Rava-Ruska",
-        "name:nb": "Rava-Ruska",
-        "name:nn": "Rava-Ruska",
-        "name:pl": "Rawa Ruska",
-        "name:prefix": "місто",
-        "name:pt": "Rava-Ruska",
-        "name:ro": "Rava-Ruska",
-        "name:ru": "Рава-Русская",
-        "name:sv": "Rava-Ruska",
-        "name:uk": "Рава-Руська",
-        "name:uz": "Rava-Ruska",
-        "name:vi": "Rava-Ruska",
-        "name:zh": "拉瓦-魯斯卡",
-        "place": "town",
-        "population": "8328",
-        "postal_code": "80316",
-        "wikidata": "Q997343",
-        "wikipedia": "uk:Рава-Руська",
-        "wikipedia:ru": "Рава-Русская"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          23.6240014,
-          50.230654
-        ]
-      },
-      "id": "node/337526329"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/339828805",
-        "is_in:county": "powiat kielecki",
-        "is_in:municipality": "gmina Chęciny",
-        "is_in:province": "województwo świętokrzyskie",
-        "name": "Chęciny",
-        "name:pl": "Chęciny",
-        "name:ru": "Хенцины",
-        "name:sr": "Хенћини",
-        "name:uk": "Хенціни",
-        "place": "town",
-        "population": "4316",
-        "population:date": "2023-07-20",
-        "postal_code": "26-060",
-        "source:population": "https://stat.gov.pl/obszary-tematyczne/ludnosc/ludnosc/powierzchnia-i-ludnosc-w-przekroju-terytorialnym-w-2023-roku,7,20.html",
-        "teryt:simc": "0946846",
-        "wikidata": "Q991924",
-        "wikipedia": "pl:Chęciny"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          20.4622228,
-          50.8000835
-        ]
-      },
-      "id": "node/339828805"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/360217931",
-        "is_in:county": "powiat włodawski",
-        "is_in:municipality": "gmina Włodawa",
-        "is_in:province": "województwo lubelskie",
-        "name": "Włodawa",
-        "name:be": "Уладава",
-        "name:bg": "Влодава",
-        "name:fa": "وووداوا",
-        "name:he": "ולודבה",
-        "name:lt": "Vlodava",
-        "name:lv": "Vlodava",
-        "name:ml": "വൊഡാവ",
-        "name:pl": "Włodawa",
-        "name:ru": "Влодава",
-        "name:sr": "Влодава",
-        "name:uk": "Володава",
-        "name:zh": "弗沃達瓦",
-        "place": "town",
-        "population": "12030",
-        "postal_code": "22-200",
-        "source:population": "https://demografia.stat.gov.pl/BazaDemografia/Tables.aspx",
-        "teryt:rm": "96",
-        "teryt:simc": "0930294",
-        "teryt:stan_na": "2009-01-01",
-        "teryt:terc": "0619011",
-        "teryt:updated_by": "teryt2osm combine.py v. 49",
-        "wikidata": "Q751076",
-        "wikipedia": "pl:Włodawa"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          23.553219,
-          51.5466412
-        ]
-      },
-      "id": "node/360217931"
+      "id": "node/337549574"
     },
     {
       "type": "Feature",
@@ -2555,32 +1864,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/362656279",
-        "name": "Kamionka",
-        "name:ru": "Камйонка",
-        "name:uk": "Камйонка",
-        "place": "town",
-        "population": "1739",
-        "population:date": "2021-06-30",
-        "postal_code": "21-132",
-        "source:population": "Narodowy Spis Powszechny 2021",
-        "teryt:simc": "0382480",
-        "teryt:terc": "0608054",
-        "wikidata": "Q130536",
-        "wikipedia": "pl:Kamionka (powiat lubartowski)"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          22.4644249,
-          51.4711228
-        ]
-      },
-      "id": "node/362656279"
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "@id": "node/362657439",
         "description": "Miasto od 1 stycznia 2025",
         "is_in": "gmina Kurów, powiat puławski, województwo lubelskie, Poland",
@@ -2613,36 +1896,28 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/363634412",
-        "is_in:county": "powiat lubartowski",
-        "is_in:municipality": "gmina Lubartów",
-        "is_in:province": "województwo lubelskie",
-        "name": "Lubartów",
-        "name:lt": "Liubartuvas",
-        "name:pl": "Lubartów",
-        "name:ru": "Любартув",
-        "name:uk": "Любартув",
+        "@id": "node/366341106",
+        "name": "Pruchnik",
+        "name:ru": "Прухник",
+        "name:uk": "Прухнік",
         "place": "town",
-        "population": "20494",
+        "population": "3636",
         "population:date": "2021-06-30",
-        "postal_code": "21-100",
+        "postal_code": "37-560",
         "source:population": "Narodowy Spis Powszechny 2021",
-        "teryt:rm": "96",
-        "teryt:simc": "0956313",
-        "teryt:stan_na": "2009-01-01",
-        "teryt:terc": "0608011",
-        "teryt:updated_by": "teryt2osm combine.py v. 49",
-        "wikidata": "Q283885",
-        "wikipedia": "pl:Lubartów"
+        "teryt:simc": "0608316",
+        "teryt:terc": "1804074",
+        "wikidata": "Q2114405",
+        "wikipedia": "pl:Pruchnik"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          22.6052895,
-          51.4660473
+          22.5160585,
+          49.9061358
         ]
       },
-      "id": "node/363634412"
+      "id": "node/366341106"
     },
     {
       "type": "Feature",
@@ -2680,38 +1955,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/368033796",
-        "image": "http://commons.wikimedia.org/wiki/Pionki",
-        "name": "Pionki",
-        "name:lt": "Pionkos",
-        "name:pl": "Pionki",
-        "name:ru": "Пёнки",
-        "name:uk": "Пйонкі",
-        "place": "town",
-        "population": "16779",
-        "population:date": "2021-06-30",
-        "postal_code": "26-670",
-        "source:population": "Narodowy Spis Powszechny 2021",
-        "teryt:rm": "96",
-        "teryt:simc": "0973748",
-        "teryt:stan_na": "2009-01-01",
-        "teryt:terc": "1425011",
-        "teryt:updated_by": "teryt2osm combine.py v. 49",
-        "wikidata": "Q1753143",
-        "wikipedia": "pl:Pionki"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          21.4438404,
-          51.4730031
-        ]
-      },
-      "id": "node/368033796"
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "@id": "node/368033804",
         "description": "Miasto od 1 stycznia 2022",
         "name": "Jedlnia-Letnisko",
@@ -2735,67 +1978,6 @@
         ]
       },
       "id": "node/368033804"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/368746637",
-        "name": "Siedliszcze",
-        "name:en": "Siedliszcze",
-        "name:he": "שיידלישצ'ה",
-        "name:pl": "Siedliszcze",
-        "name:ru": "Седлище",
-        "name:uk": "Седлище",
-        "place": "town",
-        "population": "1367",
-        "population:date": "2021-06-30",
-        "postal_code": "22-130",
-        "source:population": "Narodowy Spis Powszechny 2021",
-        "teryt:rm": "96",
-        "teryt:simc": "0107821",
-        "teryt:terc": "0603114",
-        "wikidata": "Q172946",
-        "wikipedia": "pl:Siedliszcze"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          23.1648455,
-          51.1946235
-        ]
-      },
-      "id": "node/368746637"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/371818461",
-        "is_in:county": "powiat lubaczowski",
-        "is_in:municipality": "gmina Narol",
-        "is_in:province": "województwo podkarpackie",
-        "name": "Narol",
-        "name:pl": "Narol",
-        "name:ru": "Нароль",
-        "name:sr": "Нарол",
-        "name:uk": "Нароль",
-        "place": "town",
-        "population": "2031",
-        "population:date": "2021-06-30",
-        "postal_code": "37-610",
-        "source:population": "Narodowy Spis Powszechny 2021",
-        "teryt:simc": "0606984",
-        "teryt:terc": "1809054",
-        "wikidata": "Q2439514",
-        "wikipedia": "pl:Narol"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          23.3274426,
-          50.3488112
-        ]
-      },
-      "id": "node/371818461"
     },
     {
       "type": "Feature",
@@ -2890,41 +2072,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/371949255",
-        "name": "Szczebrzeszyn",
-        "name:be": "Шчабжэшын",
-        "name:cs": "Štěbřešín",
-        "name:el": "Στσεμπζέσιν",
-        "name:he": "שצ'בז'שין",
-        "name:lv": "Ščebžešina",
-        "name:ru": "Щебжешин",
-        "name:sr": "Шчебжешин",
-        "name:uk": "Щебрешин",
-        "name:wuu": "什切布热申",
-        "name:zh": "什切布熱申",
-        "place": "town",
-        "population": "4849",
-        "population:date": "2021-06-30",
-        "postal_code": "22-460",
-        "source:population": "Narodowy Spis Powszechny 2021",
-        "teryt:rm": "96",
-        "teryt:simc": "0987934",
-        "teryt:terc": "0620134",
-        "wikidata": "Q436",
-        "wikipedia": "pl:Szczebrzeszyn"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          22.9786754,
-          50.6946972
-        ]
-      },
-      "id": "node/371949255"
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "@id": "node/371949259",
         "name": "Urzędów",
         "name:ru": "Ужендув",
@@ -2985,33 +2132,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/371949660",
-        "name": "Rejowiec Fabryczny",
-        "name:pl": "Rejowiec Fabryczny",
-        "name:ru": "Реёвец-Фабрычны",
-        "name:uk": "Рейовець-Фабричний",
-        "place": "town",
-        "population": "4102",
-        "population:date": "2021-06-30",
-        "postal_code": "22-170",
-        "source:population": "Narodowy Spis Powszechny 2021",
-        "teryt:simc": "0930176",
-        "teryt:terc": "0603011",
-        "wikidata": "Q1906301",
-        "wikipedia": "pl:Rejowiec Fabryczny"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          23.2467333,
-          51.1191844
-        ]
-      },
-      "id": "node/371949660"
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "@id": "node/371949690",
         "loc_name": "Janów",
         "name": "Janów Lubelski",
@@ -3046,33 +2166,6 @@
         ]
       },
       "id": "node/371949690"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/371949745",
-        "name": "Tyszowce",
-        "name:ru": "Тышовце",
-        "name:uk": "Тишовце",
-        "name:zh": "蒂紹夫采",
-        "place": "town",
-        "population": "1926",
-        "population:date": "2021-06-30",
-        "postal_code": "22-630",
-        "source:population": "Narodowy Spis Powszechny 2021",
-        "teryt:simc": "0903676",
-        "teryt:terc": "0618124",
-        "wikidata": "Q1946027",
-        "wikipedia": "pl:Tyszowce"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          23.6982172,
-          50.6172008
-        ]
-      },
-      "id": "node/371949745"
     },
     {
       "type": "Feature",
@@ -3243,40 +2336,364 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1837516733",
-        "name": "Tomaszów Lubelski",
-        "name:be": "Тамашаў Любэльскі",
-        "name:bg": "Томашов Любелски",
-        "name:fa": "توماشوف لوبلسکی",
-        "name:he": "טומשוב לובלסקי",
-        "name:ja": "トマシュフ・ルベルスキ",
-        "name:lt": "Liublino Tomašuvas",
-        "name:lv": "Tomašova Lubelska",
-        "name:os": "Томашув-Любельски",
-        "name:pl": "Tomaszów Lubelski",
-        "name:ru": "Томашув-Любельски",
-        "name:sr": "Томашов Лубелски",
-        "name:uk": "Томашув-Любельски",
-        "name:yi": "טאמאשאוו",
-        "name:zh": "盧布林地區托馬舒夫",
+        "@id": "node/503945899",
+        "name": "Radymno",
+        "name:be": "Радымна",
+        "name:bg": "Радимно",
+        "name:fa": "رادمنو",
+        "name:he": "ראדימנו",
+        "name:lv": "Radimno",
+        "name:ru": "Радимно",
+        "name:sr": "Радимно",
+        "name:uk": "Радимно",
+        "name:zh": "拉迪姆诺",
         "place": "town",
-        "population": "18567",
+        "population": "5114",
         "population:date": "2021-06-30",
-        "postal_code": "22-600",
+        "postal_code": "37-550",
         "source:population": "Narodowy Spis Powszechny 2021",
-        "teryt:simc": "0988075",
-        "teryt:terc": "0618011",
-        "wikidata": "Q911009",
-        "wikipedia": "pl:Tomaszów Lubelski"
+        "teryt:simc": "0972594",
+        "teryt:terc": "1804021",
+        "wikidata": "Q336217",
+        "wikipedia": "pl:Radymno"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          23.4165561,
-          50.4469315
+          22.8183129,
+          49.9517176
         ]
       },
-      "id": "node/1837516733"
+      "id": "node/503945899"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/506203648",
+        "name": "Dynów",
+        "name:de": "Dünhof",
+        "name:he": "דינוב",
+        "name:pl": "Dynów",
+        "name:ru": "Дынув",
+        "name:sr": "Динов",
+        "name:uk": "Динів",
+        "place": "town",
+        "population": "6085",
+        "population:date": "2021-06-30",
+        "postal_code": "36-065",
+        "source:population": "Narodowy Spis Powszechny 2021",
+        "teryt:simc": "0972080",
+        "teryt:terc": "1816011",
+        "wikidata": "Q910985",
+        "wikipedia": "pl:Dynów"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.2338151,
+          49.8134771
+        ]
+      },
+      "id": "node/506203648"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/514049775",
+        "name": "Kańczuga",
+        "name:pl": "Kańczuga",
+        "name:ru": "Канвчуга",
+        "name:uk": "Каньвчуга",
+        "place": "town",
+        "population": "2986",
+        "population:date": "2021-06-30",
+        "postal_code": "37-220",
+        "source:population": "Narodowy Spis Powszechny 2021",
+        "teryt:simc": "0972424",
+        "teryt:terc": "1814054",
+        "wikidata": "Q653844",
+        "wikipedia": "pl:Kańczuga"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.4131838,
+          49.9843732
+        ]
+      },
+      "id": "node/514049775"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/514080074",
+        "name": "Sieniawa",
+        "name:ru": "Сенява",
+        "name:uk": "Сенява",
+        "place": "town",
+        "population": "2031",
+        "population:date": "2021-06-30",
+        "postal_code": "37-530",
+        "source:population": "Narodowy Spis Powszechny 2021",
+        "teryt:simc": "0972683",
+        "teryt:terc": "1814074",
+        "wikidata": "Q377994",
+        "wikipedia": "pl:Sieniawa"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.6102155,
+          50.1780728
+        ]
+      },
+      "id": "node/514080074"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/566488640",
+        "name": "Błażowa",
+        "name:de": "Blasow",
+        "name:pl": "Błażowa",
+        "name:ru": "Блажова",
+        "name:uk": "Блажова",
+        "place": "town",
+        "population": "2116",
+        "population:date": "2021-06-30",
+        "postal_code": "36-030",
+        "source:population": "Narodowy Spis Powszechny 2021",
+        "teryt:simc": "0974280",
+        "teryt:terc": "1816024",
+        "wikidata": "Q122758",
+        "wikipedia": "pl:Błażowa"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.1008013,
+          49.8856022
+        ]
+      },
+      "id": "node/566488640"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/602499181",
+        "name": "Kołaczyce",
+        "name:ru": "Колачице",
+        "name:uk": "Колачице",
+        "place": "town",
+        "population": "1390",
+        "population:date": "2021-06-30",
+        "postal_code": "38-213",
+        "source:population": "Narodowy Spis Powszechny 2021",
+        "teryt:simc": "0353968",
+        "teryt:terc": "1805054",
+        "wikidata": "Q2218834",
+        "wikipedia": "pl:Kołaczyce"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.4340516,
+          49.8076605
+        ]
+      },
+      "id": "node/602499181"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/634167458",
+        "name": "Jedlicze",
+        "name:bg": "Йедличе",
+        "name:lv": "Jedliče",
+        "name:nl": "Jedlicze (plaats)",
+        "name:pl": "Jedlicze",
+        "name:ru": "Едличе",
+        "name:sr": "Једличе",
+        "name:uk": "Єдліче",
+        "name:zh": "耶德利切",
+        "place": "town",
+        "population": "5574",
+        "population:date": "2021-06-30",
+        "postal_code": "38-460",
+        "source:population": "Narodowy Spis Powszechny 2021",
+        "teryt:simc": "0953237",
+        "teryt:terc": "1807044",
+        "wikidata": "Q655210",
+        "wikipedia": "pl:Jedlicze"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.6421513,
+          49.714148
+        ]
+      },
+      "id": "node/634167458"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/692614000",
+        "name": "Bircza",
+        "name:uk": "Бірча",
+        "place": "town",
+        "population": "1045",
+        "postal_code": "37-740",
+        "ref:nid": "A-75",
+        "ref:nid:date": "1982-11-15",
+        "start_date": "1450",
+        "teryt:rm": "96",
+        "teryt:simc": "0598990"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.4804308,
+          49.691222
+        ]
+      },
+      "id": "node/692614000"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/692614019",
+        "name": "Dubiecko",
+        "name:ru": "Дубецко",
+        "name:uk": "Дубецко",
+        "place": "town",
+        "population": "845",
+        "population:date": "2021-06-30",
+        "postal_code": "37-750",
+        "source:population": "Narodowy Spis Powszechny 2021",
+        "teryt:simc": "0600496",
+        "teryt:terc": "1813024",
+        "wikidata": "Q2612477",
+        "wikipedia": "pl:Dubiecko"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          22.3916222,
+          49.8253187
+        ]
+      },
+      "id": "node/692614019"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1763537474",
+        "name": "Biecz",
+        "name:de": "Beitsch",
+        "name:pl": "Biecz",
+        "name:ru": "Беч",
+        "name:uk": "Беч",
+        "place": "town",
+        "population": "4445",
+        "population:date": "2021-06-30",
+        "postal_code": "38-340",
+        "source:population": "Narodowy Spis Powszechny 2021",
+        "teryt:rm": "96",
+        "teryt:simc": "0952752",
+        "teryt:stan_na": "2009-01-01",
+        "teryt:terc": "1205024",
+        "teryt:updated_by": "teryt2osm combine.py v. 49",
+        "wikidata": "Q460971",
+        "wikipedia": "pl:Biecz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.249421,
+          49.7305351
+        ]
+      },
+      "id": "node/1763537474"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1763537494",
+        "is_in:municipality": "gmina Jasło",
+        "multi_postcode_place": "yes",
+        "name": "Jasło",
+        "name:de": "Jassel",
+        "name:lt": "Jaslas",
+        "name:pl": "Jasło",
+        "name:ru": "Ясло",
+        "name:sk": "Jaslo",
+        "name:uk": "Ясло",
+        "place": "town",
+        "population": "33830",
+        "population:date": "2021-06-30",
+        "source:population": "Narodowy Spis Powszechny 2021",
+        "teryt:rm": "96",
+        "teryt:simc": "0953059",
+        "teryt:stan_na": "2009-01-01",
+        "teryt:terc": "1805011",
+        "wikidata": "Q848983",
+        "wikipedia": "pl:Jasło"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.4743139,
+          49.7470465
+        ]
+      },
+      "id": "node/1763537494"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1763537504",
+        "addr:postcode": "38-400",
+        "name": "Krosno",
+        "name:ar": "كروسنو",
+        "name:ba": "Кросно",
+        "name:be": "Кросна",
+        "name:bg": "Кросно",
+        "name:cu": "Кросьно",
+        "name:de": "Krossen",
+        "name:fa": "کروسنو",
+        "name:he": "קרוסנו",
+        "name:ja": "クロスノ",
+        "name:ko": "크로스노",
+        "name:lt": "Krosnas",
+        "name:ml": "ക്രോസ്നോ",
+        "name:os": "Кросно",
+        "name:pl": "Krosno",
+        "name:ru": "Кросно",
+        "name:sr": "Кросно",
+        "name:uk": "Кросно",
+        "name:zh": "克羅斯諾",
+        "place": "city",
+        "population": "45057",
+        "population:date": "2021-06-30",
+        "postal_code": "38-400",
+        "source:population": "Narodowy Spis Powszechny 2021",
+        "teryt:rm": "96",
+        "teryt:simc": "0952410",
+        "teryt:stan_na": "2009-01-01",
+        "teryt:terc": "1861011",
+        "teryt:updated_by": "teryt2osm combine.py v. 49",
+        "wikidata": "Q826068",
+        "wikipedia": "pl:Krosno"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.7651458,
+          49.6938045
+        ]
+      },
+      "id": "node/1763537504"
     },
     {
       "type": "Feature",
@@ -3335,86 +2752,53 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1850625500",
-        "name": "Izbica",
-        "name:ru": "Избица",
-        "name:uk": "Ізбица",
+        "@id": "node/1848786444",
+        "name": "Brzozów",
+        "name:pl": "Brzozów",
+        "name:ru": "Бжозув",
+        "name:uk": "Березів",
         "place": "town",
-        "population": "1739",
-        "source": "PRNG",
-        "teryt:simc": "0889700",
-        "wikidata": "Q2039456",
-        "wikipedia": "pl:Izbica (miasto)"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          23.1587974,
-          50.8927773
-        ]
-      },
-      "id": "node/1850625500"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/1854936827",
-        "name": "Chmielnik",
-        "name:eo": "Chmielnik",
-        "name:fr": "Chmielnik",
-        "name:he": "חמיילניק",
-        "name:lv": "Hmelņika",
-        "name:nl": "Chmielnik",
-        "name:pl": "Chmielnik",
-        "name:ru": "Хмельник",
-        "name:sr": "Хмјелњик",
-        "name:uk": "Хмельник",
-        "name:zh": "赫梅爾尼克",
-        "place": "town",
-        "population": "3503",
-        "population:date": "2023-07-20",
-        "postal_code": "26-020",
-        "source:population": "https://stat.gov.pl/obszary-tematyczne/ludnosc/ludnosc/powierzchnia-i-ludnosc-w-przekroju-terytorialnym-w-2023-roku,7,20.html",
-        "teryt:simc": "0946906",
-        "wikidata": "Q991973",
-        "wikipedia": "pl:Chmielnik (województwo świętokrzyskie)"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          20.7510406,
-          50.6145952
-        ]
-      },
-      "id": "node/1854936827"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/1854936845",
-        "name": "Dęblin",
-        "name:de": "Demblin",
-        "name:pl": "Dęblin",
-        "name:ru": "Демблин",
-        "old_name:ru": "Ивангород",
-        "place": "town",
-        "population": "14791",
+        "population": "7366",
         "population:date": "2021-06-30",
-        "postal_code": "08-530",
+        "postal_code": "36-200",
         "source:population": "Narodowy Spis Powszechny 2021",
-        "teryt:simc": "0955740",
-        "teryt:terc": "0616011",
-        "wikidata": "Q983732",
-        "wikipedia": "pl:Dęblin"
+        "teryt:simc": "0952841",
+        "teryt:terc": "1802014",
+        "wikidata": "Q653797",
+        "wikipedia": "pl:Brzozów"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          21.8654383,
-          51.562491
+          22.0196537,
+          49.6950395
         ]
       },
-      "id": "node/1854936845"
+      "id": "node/1848786444"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1854936780",
+        "name": "Boguchwała",
+        "name:ru": "Богухвала",
+        "name:uk": "Богухвала",
+        "place": "town",
+        "population": "6220",
+        "population:date": "2021-06-30",
+        "postal_code": "36-040",
+        "source:population": "Narodowy Spis Powszechny 2021",
+        "teryt:simc": "0644750",
+        "teryt:terc": "1816034"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.9391822,
+          49.9806882
+        ]
+      },
+      "id": "node/1854936780"
     },
     {
       "type": "Feature",
@@ -3451,39 +2835,6 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1854936895",
-        "alt_name": "Józefów Biłgorajski; Józefów Ordynacki",
-        "name": "Józefów",
-        "name:be": "Юзэфаў",
-        "name:fa": "یوزفوف",
-        "name:he": "יוזפוב",
-        "name:lv": "Juzefova",
-        "name:ru": "Юзефув",
-        "name:sr": "Јозефов",
-        "name:uk": "Юзефув",
-        "name:zh": "約瑟夫烏",
-        "place": "town",
-        "population": "2388",
-        "population:date": "2021-06-30",
-        "postal_code": "23-460",
-        "source:population": "Narodowy Spis Powszechny 2021",
-        "teryt:simc": "0987897",
-        "teryt:terc": "0602074",
-        "wikidata": "Q1025336",
-        "wikipedia": "pl:Józefów (powiat biłgorajski)"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          23.0540591,
-          50.4808298
-        ]
-      },
-      "id": "node/1854936895"
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "@id": "node/1854937014",
         "name": "Osiek",
         "name:ru": "Осек",
@@ -3505,32 +2856,6 @@
         ]
       },
       "id": "node/1854937014"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/1854937019",
-        "name": "Ostrów Lubelski",
-        "name:ru": "Острув-Любельский",
-        "name:uk": "Острув-Любельські",
-        "place": "town",
-        "population": "2033",
-        "population:date": "2021-06-30",
-        "postal_code": "21-110",
-        "source:population": "Narodowy Spis Powszechny 2021",
-        "teryt:simc": "0956690",
-        "teryt:terc": "0608104",
-        "wikidata": "Q1946017",
-        "wikipedia": "pl:Ostrów Lubelski"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          22.8560394,
-          51.4969068
-        ]
-      },
-      "id": "node/1854937019"
     },
     {
       "type": "Feature",
@@ -3561,34 +2886,62 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1854937043",
-        "name": "Przysucha",
-        "name:bg": "Пшисуха",
-        "name:he": "פשיסחה",
-        "name:lv": "Pšisuha",
-        "name:pl": "Przysucha",
-        "name:ru": "Пшисуха",
-        "name:sr": "Пшисуха",
-        "name:uk": "Пшисуха",
-        "name:zh": "普日蘇哈",
+        "@id": "node/1854937027",
+        "is_in:county": "powiat dębicki",
+        "is_in:municipality": "gmina Pilzno",
+        "is_in:province": "województwo podkarpackie",
+        "name": "Pilzno",
+        "name:lt": "Pilzenas",
+        "name:pl": "Pilzno",
+        "name:ru": "Пильзно",
+        "name:uk": "Пільзно",
         "place": "town",
-        "population": "5572",
+        "population": "4931",
         "population:date": "2021-06-30",
-        "postal_code": "26-400",
+        "postal_code": "39-220",
         "source:population": "Narodowy Spis Powszechny 2021",
-        "teryt:simc": "0973777",
-        "teryt:terc": "1423064",
-        "wikidata": "Q985528",
-        "wikipedia": "pl:Przysucha"
+        "teryt:rm": "96",
+        "teryt:simc": "0982345",
+        "teryt:stan_na": "2009-01-01",
+        "teryt:terc": "1803064",
+        "teryt:updated_by": "teryt2osm combine.py v. 49",
+        "wikidata": "Q1051750",
+        "wikipedia": "pl:Pilzno (Polska)"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          20.6285468,
-          51.3585043
+          21.2908438,
+          49.978578
         ]
       },
-      "id": "node/1854937043"
+      "id": "node/1854937027"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1854937053",
+        "name": "Radomyśl Wielki",
+        "name:ru": "Радомышль-Вельки",
+        "name:uk": "Радомишль-Велькі",
+        "place": "town",
+        "population": "3329",
+        "population:date": "2021-06-30",
+        "postal_code": "39-310",
+        "source:population": "Narodowy Spis Powszechny 2021",
+        "teryt:simc": "0982411",
+        "teryt:terc": "1811084",
+        "wikidata": "Q867431",
+        "wikipedia": "pl:Radomyśl Wielki"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          21.2761596,
+          50.1963674
+        ]
+      },
+      "id": "node/1854937053"
     },
     {
       "type": "Feature",
@@ -3644,42 +2997,6 @@
         ]
       },
       "id": "node/1854937161"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/1854937186",
-        "name": "Szydłowiec",
-        "name:be": "Горад Шыдловец",
-        "name:bg": "Шидловец",
-        "name:he": "שידלובייץ",
-        "name:lt": "Šydlovecas",
-        "name:lv": "Šidloveca",
-        "name:nl": "Szydłowiec (stad)",
-        "name:pl": "Szydłowiec",
-        "name:ru": "Шидловец",
-        "name:sl": "Šydloviéc",
-        "name:sr": "Шидловјец",
-        "name:uk": "Шидловець",
-        "name:zh": "希德沃維茨",
-        "place": "town",
-        "population": "10671",
-        "population:date": "2023-07-20",
-        "postal_code": "26-500",
-        "source:population": "https://stat.gov.pl/obszary-tematyczne/ludnosc/ludnosc/powierzchnia-i-ludnosc-w-przekroju-terytorialnym-w-2023-roku,7,20.html",
-        "teryt:simc": "0973895",
-        "wikidata": "Q974977",
-        "wikimedia_commons": "Category:Szydłowiec",
-        "wikipedia": "pl:Szydłowiec"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          20.8575141,
-          51.2238922
-        ]
-      },
-      "id": "node/1854937186"
     },
     {
       "type": "Feature",
@@ -3742,6 +3059,36 @@
     {
       "type": "Feature",
       "properties": {
+        "@id": "node/1855033871",
+        "name": "Ciężkowice",
+        "name:bg": "Ченжковице",
+        "name:lv": "Cenžkovice",
+        "name:nl": "Ciężkowice (plaats)",
+        "name:pl": "Ciężkowice",
+        "name:ru": "Ченжковице",
+        "name:sr": "Ћеншковице",
+        "name:uk": "Ценжковіце",
+        "name:zh": "錢日科維采",
+        "place": "town",
+        "population": "2506",
+        "population:date": "2022-12-08",
+        "postal_code": "33-190",
+        "teryt:simc": "0815239",
+        "wikidata": "Q959508",
+        "wikipedia": "pl:Ciężkowice"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.9737542,
+          49.786464
+        ]
+      },
+      "id": "node/1855033871"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "@id": "node/1859414380",
         "name": "Modliborzyce",
         "name:ru": "Модлибожице",
@@ -3795,36 +3142,6 @@
         ]
       },
       "id": "node/1859446993"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/1859515654",
-        "name": "Rejowiec",
-        "name:en": "Rejowiec",
-        "name:fr": "Rejowiec",
-        "name:he": "ריובייץ",
-        "name:nl": "Rejowiec",
-        "name:ru": "Реёвец",
-        "name:uk": "Рейовець",
-        "place": "town",
-        "population": "1982",
-        "population:date": "2021-06-30",
-        "postal_code": "22-360",
-        "source:population": "Narodowy Spis Powszechny 2021",
-        "teryt:simc": "0105667",
-        "teryt:terc": "0603154",
-        "wikidata": "Q3912975",
-        "wikipedia": "pl:Rejowiec"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          23.2832851,
-          51.0945453
-        ]
-      },
-      "id": "node/1859515654"
     },
     {
       "type": "Feature",
@@ -3955,27 +3272,28 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/1933057152",
-        "name": "Opatowiec",
-        "name:ru": "Опатовец",
-        "name:uk": "Опатов'єц",
+        "@id": "node/1933057260",
+        "name": "Przecław",
+        "name:ru": "Пшецлав",
+        "name:uk": "Пшеслав",
         "place": "town",
-        "population": "306",
-        "population:date": "2025-10-29",
-        "postal_code": "28-520",
-        "source:population": "bdl.stat.gov.pl/bdl/dane/teryt/tablica",
-        "teryt:simc": "0257963",
-        "wikidata": "Q2091673",
-        "wikipedia": "pl:Opatowiec"
+        "population": "1794",
+        "population:date": "2021-06-30",
+        "postal_code": "39-320",
+        "source:population": "Narodowy Spis Powszechny 2021",
+        "teryt:simc": "0658828",
+        "teryt:terc": "1811074",
+        "wikidata": "Q2372031",
+        "wikipedia": "pl:Przecław"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          20.7237798,
-          50.2425871
+          21.4798564,
+          50.1939186
         ]
       },
-      "id": "node/1933057152"
+      "id": "node/1933057260"
     },
     {
       "type": "Feature",
@@ -4012,115 +3330,58 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2006432543",
-        "name": "Lubycza Królewska",
-        "name:ar": "لوبيتشا كرولسكا",
-        "name:be": "Любыча Крулеўска",
-        "name:fa": "لوبچا کرولوسکا",
-        "name:he": "לוביצ'ה קרולבסקה",
-        "name:ru": "Любича Крулевска",
-        "name:uk": "Любича Крулевска",
+        "@id": "node/1933108029",
+        "name": "Jawornik Polski",
+        "name:uk": "Явірник Польський",
         "place": "town",
-        "population": "2204",
-        "population:date": "2021-06-30",
-        "postal_code": "22-680",
-        "source:population": "Narodowy Spis Powszechny 2021",
-        "teryt:simc": "0892889",
-        "teryt:terc": "0618054",
-        "wikidata": "Q2667171",
-        "wikipedia": "pl:Lubycza Królewska"
+        "population": "1161",
+        "postal_code": "37-232",
+        "source:population": "https://stat.gov.pl/obszary-tematyczne/ludnosc/ludnosc/ludnosc-stan-i-struktura-ludnosci-oraz-ruch-naturalny-w-przekroju-terytorialnym-w-2024-r-stan-w-dniu-30-06,6,37.html",
+        "teryt:rm": "96",
+        "teryt:simc": "0603900",
+        "wikidata": "Q2149342",
+        "wikipedia": "pl:Jawornik Polski"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          23.5196564,
-          50.3411612
+          22.2837088,
+          49.8886553
         ]
       },
-      "id": "node/2006432543"
+      "id": "node/1933108029"
     },
     {
       "type": "Feature",
       "properties": {
-        "@id": "node/2066176707",
-        "name": "Kozienice",
-        "name:lt": "Kozenicai",
-        "name:pl": "Kozienice",
-        "name:ru": "Козенице",
-        "name:uk": "Козеніце",
-        "old_name:de": "Koschnitz",
+        "@id": "node/1933108183",
+        "name": "Ryglice",
+        "name:bg": "Риглице",
+        "name:he": "ריגליץ",
+        "name:lv": "Riglice",
+        "name:pl": "Ryglice",
+        "name:ru": "Рыглице",
+        "name:sr": "Риглице",
+        "name:uk": "Ригліце",
+        "name:zh": "雷格利采",
         "place": "town",
-        "population": "16192",
+        "population": "2735",
         "population:date": "2021-06-30",
-        "postal_code": "26-900",
+        "postal_code": "33-160",
         "source:population": "Narodowy Spis Powszechny 2021",
-        "teryt:rm": "96",
-        "teryt:simc": "0973524",
-        "teryt:stan_na": "2009-01-01",
-        "teryt:terc": "1407054",
-        "teryt:updated_by": "kesikp",
-        "website": "http://www.kozienice.pl",
-        "wikidata": "Q990651",
-        "wikipedia": "pl:Kozienice"
+        "teryt:simc": "0829098",
+        "teryt:terc": "1216064",
+        "wikidata": "Q1280831",
+        "wikipedia": "pl:Ryglice"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          21.549883,
-          51.5849678
+          21.1380371,
+          49.8783327
         ]
       },
-      "id": "node/2066176707"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "node/2110720553",
-        "mult_postcode_place": "yes",
-        "name": "Kielce",
-        "name:ar": "كيلسي",
-        "name:be": "Кельцы",
-        "name:bg": "Келце",
-        "name:eo": "Kjelco",
-        "name:fa": "کیلتس",
-        "name:he": "קיילצה",
-        "name:hu": "Kielce",
-        "name:ja": "キェルツェ",
-        "name:ka": "კელცე",
-        "name:ko": "키엘체",
-        "name:lt": "Kelcai",
-        "name:lv": "Kelce",
-        "name:mk": "Келце",
-        "name:ml": "കിയൽറ്റ്സെ",
-        "name:pl": "Kielce",
-        "name:ru": "Кельце",
-        "name:sr": "Кјелце",
-        "name:szl": "Kelce",
-        "name:uk": "Кельце",
-        "name:yi": "קעלץ",
-        "name:zh": "凯尔采",
-        "place": "city",
-        "population": "183885",
-        "population:date": "2023-07-20",
-        "postal_code": "25-001",
-        "source:population": "https://stat.gov.pl/obszary-tematyczne/ludnosc/ludnosc/powierzchnia-i-ludnosc-w-przekroju-terytorialnym-w-2023-roku,7,20.html",
-        "teryt:rm": "96",
-        "teryt:simc": "0945930",
-        "teryt:stan_na": "2009-01-01",
-        "teryt:terc": "2661011",
-        "teryt:updated_by": "teryt2osm combine.py v. 49",
-        "website": "http://www.um.kielce.pl/",
-        "wikidata": "Q102317",
-        "wikipedia": "pl:Kielce"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          20.6310488,
-          50.8719903
-        ]
-      },
-      "id": "node/2110720553"
+      "id": "node/1933108183"
     }
   ]
 }

@@ -46,7 +46,7 @@ def test_cities():
     with get_db() as session:
         for name, lat, lon in cities:
             session.run(
-                "CREATE (c:City {name: $name, latitude: $lat, longitude: $lon})",
+                "CREATE (c:City {name: $name, location: point({latitude: $lat, longitude: $lon})})",
                 name=name, lat=lat, lon=lon,
             )
     return cities
@@ -58,7 +58,7 @@ def _create_flock_with_report(session, flock_id, lat, lon, ts_iso):
     """Create a Flock node with a Report and LAST_REPORT relationship."""
     session.run(
         "CREATE (f:Flock {id: $fid})-[:HAS_REPORT]->"
-        "(:Report {id: $rid, latitude: $lat, longitude: $lon, timestamp: datetime($ts)})",
+        "(:Report {id: $rid, location: point({latitude: $lat, longitude: $lon}), timestamp: datetime($ts)})",
         fid=flock_id, rid=flock_id + "_r1", lat=lat, lon=lon, ts=ts_iso,
     )
     session.run(

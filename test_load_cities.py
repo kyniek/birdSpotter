@@ -97,12 +97,12 @@ class TestLoadCities:
 
         with get_db() as session:
             result = session.run(
-                "MATCH (c:City {name: $name}) RETURN c.latitude AS lat, c.longitude AS lon",
+                "MATCH (c:City {name: $name}) RETURN c.location.y AS lat, c.location.x AS lon",
                 name="TestCity",
             )
             row = list(result)[0]
-            assert row["lat"] == 50.0
-            assert row["lon"] == 21.0
+            assert row["lat"] == pytest.approx(50.0, abs=1e-6)
+            assert row["lon"] == pytest.approx(21.0, abs=1e-6)
 
     def test_load_cities_merges_on_name(self):
         """Calling load_cities twice with the same data should not duplicate nodes."""

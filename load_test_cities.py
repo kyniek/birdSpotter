@@ -15,7 +15,7 @@ def load_cities_from_geojson(geojson_path: str) -> str:
     lines = ["name,lat,lon"]
     for feat in data.get("features", []):
         props = feat.get("properties", {})
-        name_pl = props.get("name:pl")
+        name_pl = props.get("name:pl") or props.get("name")
         place = props.get("place")
         if name_pl and place in ("city", "town", "village"):
             coords = feat["geometry"]["coordinates"]

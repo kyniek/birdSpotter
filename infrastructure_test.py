@@ -1,12 +1,20 @@
 # This is a sample Python script.
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+import yaml
+
+
+def _load_pass():
+    """Load credentials from pass.yaml."""
+    with open("pass.yaml", "r") as f:
+        return yaml.safe_load(f)
+
+
 def neo4J_test():
+    creds = _load_pass()
     from neo4j import GraphDatabase
     driver = GraphDatabase.driver(
-        "bolt://localhost:7687",
-        auth=("neo4j", "Qwerty1234")
+        creds["neo4j"]["uri"],
+        auth=(creds["neo4j"]["user"], creds["neo4j"]["password"])
     )
     with driver.session() as session:
         result = session.run(
@@ -50,10 +58,11 @@ def mail_test():
     import imaplib
     import email
     from email.header import decode_header
+    creds = _load_pass()
     # Konfiguracja
-    IMAP_HOST = "imap.gmail.com"
-    EMAIL = "k.p.nielepkowicz@gmail.com"
-    PASSWORD = "hnob bhxo jtop diqp"  # App Password z Google
+    IMAP_HOST = creds["imap"]["host"]
+    EMAIL = creds["imap"]["user"]
+    PASSWORD = creds["imap"]["password"]  # App Password z Google
     # Połączenie
     mail = imaplib.IMAP4_SSL(IMAP_HOST)
     mail.login(EMAIL, PASSWORD)

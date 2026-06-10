@@ -47,7 +47,7 @@ def load_cities(csv_path: str):
             session.run(
                 """
                 MERGE (c:City {name: $name})
-                SET c.latitude = $lat, c.longitude = $lon
+                SET c.location = point({latitude: $lat, longitude: $lon})
                 """,
                 name=city["name"],
                 lat=city["lat"],
