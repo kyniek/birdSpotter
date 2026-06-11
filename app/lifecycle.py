@@ -38,7 +38,11 @@ def _ensure_schema():
 
 
 def _load_cities_if_missing():
-    """Load Polish cities from export.geojson if no City nodes exist yet."""
+    """Load Polish cities from export.geojson if no City nodes exist yet.
+
+    Reuses the same parsing logic as ``load_test_cities.load_cities_from_geojson``
+    so the server and the test loader stay in sync.
+    """
     with get_db() as session:
         count = session.run("MATCH (c:City) RETURN count(c) AS cnt").single()["cnt"]
         if count > 0:
@@ -49,22 +53,21 @@ def _load_cities_if_missing():
         print("  [skip] export.geojson not found — no cities loaded.")
         return
 
+    # Reuse the exact same parsing logic from load_test_cities
     import json
 
-    with open(geojson_path) as f:
+    with open(geojson_path, encoding="utf-8") as f:
         data = json.load(f)
 
     cities = []
-    for feature in data.get("features", []):
-        props = feature.get("properties", {})
-        place = props.get("place", "")
-        name_pl = props.get("name:pl", "")
-        if place in ("city", "town") and name_pl:
-            geo = feature.get("geometry", {})
-            coords = geo.get("coordinates", [])
-            if len(coords) == 2:
-                lon, lat = coords[0], coords[1]
-                cities.append({"name": name_pl, "lat": float(lat), "lon": float(lon)})
+    for feat in data.get("features", []):
+        props = feat.get("properties", {})
+        name_pl = props.get("name:pl") or props.get("name")
+        place = props.get("place")
+        if name_pl and place in ("city", "town", "village"):
+            coords = feat["geometry"]["coordinates"]
+            lon, lat = coords[0], coords[1]
+            cities.append({"name": name_pl, "lat": float(lat), "lon": float(lon)})
 
     with get_db() as session:
         for c in cities:

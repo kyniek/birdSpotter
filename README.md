@@ -8,6 +8,11 @@ Bird flock tracking server API. Accepts bird sighting reports via REST, groups t
 - **Neo4j** — running on `localhost:7687` (default). See [Setup](#setup) for options.
 - **Redis** — running on `localhost:6379` (default).
 
+## Useful commands 
+python load_cities.py --clean
+
+
+
 ## Setup
 
 ### 1. Clone and create virtual environment
