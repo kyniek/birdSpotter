@@ -3,40 +3,146 @@
 Uses FastAPI's TestClient to hit the real /api/report endpoint, with real
 Neo4j queries to verify flock creation, joining, city prediction, and
 validation — all backed by real city data loaded from export.geojson.
+
+Tests run against a dedicated Neo4j test container (port 7688) to avoid
+contaminating the production database.
 """
 
 import pytest
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
+import subprocess
+import time
 
 from fastapi.testclient import TestClient
 from neo4j import GraphDatabase
 
 from app.main import app
 from app.config import settings
-from app.neo4j_client import driver
+from app.neo4j_client import driver, get_test_db
+
+# Import the lazy accessor under an alias to avoid pytest collecting it as a test
+from app.neo4j_client import _get_test_driver as _td
 
 
-# ── Fixtures ───────────────────────────────────────────────────────────────────
+# ── Test container lifecycle ───────────────────────────────────────────────────
 
-@pytest.fixture(autouse=True, scope="session")
-def neo4j_driver():
-    """Ensure Neo4j driver is alive for the session."""
-    driver.verify_connectivity()
-    yield driver
+TEST_CONTAINER_NAME = "birdspotter-test-neo4j"
+TEST_IMAGE = "neo4j:latest"
+TEST_BOLT_PORT = 7688
+TEST_HTTP_PORT = 7475
+TEST_USER = settings.neo4j_test_user
+TEST_PASSWORD = settings.neo4j_test_password
 
 
-def clean_db():
-    """Detach-delete every node in Neo4j."""
-    with driver.session() as s:
+def _container_is_running() -> bool:
+    """Check whether the test Neo4j container is currently running."""
+    result = subprocess.run(
+        ["docker", "inspect", "-f", "{{.State.Running}}", TEST_CONTAINER_NAME],
+        capture_output=True, text=True,
+    )
+    return result.returncode == 0 and result.stdout.strip() == "true"
+
+
+def _container_is_healthy() -> bool:
+    """Check whether the test Neo4j container is accepting Bolt connections.
+
+    We use a lightweight Neo4j driver connection to verify the Bolt service
+    is fully initialised, because raw socket checks are unreliable — Docker
+    opens the port before Neo4j's Bolt handshake handler is ready, and even
+    when ready the raw socket recv returns 0 bytes (the neo4j Python driver
+    handles this correctly but raw sockets do not).
+    """
+    import socket
+
+    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    sock.settimeout(3)
+    try:
+        sock.connect(("127.0.0.1", TEST_BOLT_PORT))
+        return True
+    except OSError:
+        return False
+    finally:
+        sock.close()
+
+
+def _start_test_container():
+    """Start the dedicated test Neo4j container if it isn't running."""
+    if _container_is_running():
+        # Wait for it to become healthy
+        for _ in range(30):
+            if _container_is_healthy():
+                # Give Neo4j a few extra seconds after the socket opens
+                time.sleep(5)
+                return
+            time.sleep(2)
+        raise RuntimeError("Test Neo4j container is running but not healthy")
+
+    result = subprocess.run(
+        [
+            "docker", "run", "-d",
+            "--name", TEST_CONTAINER_NAME,
+            "-p", f"{TEST_BOLT_PORT}:7687",
+            "-p", f"{TEST_HTTP_PORT}:7474",
+            "-e", "NEO4J_AUTH=neo4j/" + TEST_PASSWORD,
+            TEST_IMAGE,
+        ],
+        check=True,
+        capture_output=True,
+        text=True,
+    )
+    container_id = result.stdout.strip()
+    print(f"\nStarted test Neo4j container: {container_id[:12]}")
+
+    # Wait for health check to pass
+    for i in range(60):
+        if _container_is_healthy():
+            # Give Neo4j a few extra seconds after the socket opens
+            time.sleep(5)
+            return
+        if i % 10 == 0:
+            print(f"  Waiting for Neo4j to be ready... ({i * 2}s)")
+        time.sleep(2)
+    raise RuntimeError("Test Neo4j container failed to become healthy within 2 minutes")
+
+
+def _stop_test_container():
+    """Stop and remove the test Neo4j container (called once at session end)."""
+    if _container_is_running():
+        subprocess.run(
+            ["docker", "rm", "-f", TEST_CONTAINER_NAME],
+            capture_output=True,
+        )
+
+
+# ── Session-scoped fixtures ────────────────────────────────────────────────────
+
+@pytest.fixture(scope="session", autouse=True)
+def test_neo4j_container():
+    """Start the test Neo4j Docker container once per test session."""
+    _start_test_container()
+    yield
+    _stop_test_container()
+
+
+@pytest.fixture(scope="session")
+def neo4j_test_driver(test_neo4j_container):
+    """Return the test driver and verify connectivity."""
+    _td().verify_connectivity()
+    yield _td
+
+
+def _clean_test_db():
+    """Detach-delete every node in the test Neo4j database."""
+    with _td().session() as s:
         s.run("MATCH (n) DETACH DELETE n")
 
 
 @pytest.fixture(autouse=True)
-def _clean_before_each(neo4j_driver):
-    clean_db()
+def _clean_before_each(neo4j_test_driver):
+    _clean_test_db()
     yield
-    clean_db()
+    _clean_test_db()
 
 
 def load_cities_from_geojson():
@@ -58,7 +164,7 @@ def load_cities_from_geojson():
                 lon, lat = coords[0], coords[1]
                 cities.append({"name": name_pl, "lat": float(lat), "lon": float(lon)})
 
-    with driver.session() as s:
+    with _td().session() as s:
         for c in cities:
             s.run(
                 "CREATE (c:City {name: $name, location: point({latitude: $lat, longitude: $lon})})",
@@ -68,7 +174,7 @@ def load_cities_from_geojson():
 
 
 @pytest.fixture(scope="session", autouse=True)
-def seed_cities(neo4j_driver):
+def seed_cities(neo4j_test_driver):
     """Load cities once per test session."""
     count = load_cities_from_geojson()
     assert count > 0, "No cities loaded from export.geojson"
@@ -93,6 +199,18 @@ client = TestClient(app)
 class TestSubmitReportIntegration:
     """End-to-end tests hitting the real /api/report endpoint."""
 
+    # Monkeypatch: route app DB calls to the test driver for this test class only
+    _original_get_db = None
+
+    @pytest.fixture(autouse=True)
+    def _patch_services_to_test_db(self, neo4j_test_driver):
+        """Replace get_db in services module with get_test_db for this test."""
+        import app.services as services_module
+        TestSubmitReportIntegration._original_get_db = services_module.get_db
+        services_module.get_db = get_test_db
+        yield
+        services_module.get_db = TestSubmitReportIntegration._original_get_db
+
     def test_submit_report_creates_new_flock(self, seed_cities):
         """First report → new Flock + Report nodes created."""
         payload = {
@@ -109,7 +227,7 @@ class TestSubmitReportIntegration:
         assert "Nowe stado" in data["message"]
 
         # Verify Neo4j state
-        with driver.session() as s:
+        with _td().session() as s:
             flock = s.run(
                 "MATCH (f:Flock {id: $fid}) RETURN count(f) AS cnt",
                 fid=data["flock_id"],
@@ -155,7 +273,7 @@ class TestSubmitReportIntegration:
         assert "Dołączono" in resp2.json()["message"]
 
         # Verify two reports in the same flock
-        with driver.session() as s:
+        with _td().session() as s:
             cnt = s.run(
                 "MATCH (f:Flock {id: $fid})-[:HAS_REPORT]->(r:Report) RETURN count(r) AS cnt",
                 fid=flock1,
@@ -216,7 +334,7 @@ class TestSubmitReportIntegration:
         flock_id = resp2.json()["flock_id"]
 
         # City prediction should have found a nearby city
-        with driver.session() as s:
+        with _td().session() as s:
             # Check that the flock has 2 reports
             cnt = s.run(
                 "MATCH (f:Flock {id: $fid})-[:HAS_REPORT]->(r:Report) RETURN count(r) AS cnt",
@@ -285,7 +403,7 @@ class TestSubmitReportIntegration:
         client.post("/api/report", json=payload2)
         client.post("/api/report", json=payload3)
 
-        with driver.session() as s:
+        with _td().session() as s:
             cnt = s.run(
                 "MATCH (f:Flock {id: $fid})-[:NOTIFIED_OF]->(c:Coordinator) RETURN count(c) AS cnt",
                 fid=flock_id,
