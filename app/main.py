@@ -1,5 +1,7 @@
 """FastAPI application for BirdTracker."""
 
+from contextlib import asynccontextmanager
+
 from fastapi import FastAPI, HTTPException
 
 from .models import ReportRequest, ReportResponse
@@ -10,8 +12,17 @@ from .services import (
 )
 from .utils import calculate_bearing, haversine_distance
 from .notifications import send_notification
+from .lifecycle import init_database
 
-app = FastAPI(title="BirdTracker API")
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    """Initialize the database on startup."""
+    init_database()
+    yield
+
+
+app = FastAPI(title="BirdTracker API", lifespan=lifespan)
 
 
 @app.post("/api/report", response_model=ReportResponse)

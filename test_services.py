@@ -143,7 +143,8 @@ def test_add_report_and_get_flock_info():
     # identify_or_create_flock already created the initial report,
     # so we get 2 points (initial + new)
     assert len(last_points) == 2
-    assert last_points[0]["location"] == (52.1, 21.1)
+    locations = {tuple(p["location"]) for p in last_points}
+    assert locations == {(52.0, 21.0), (52.1, 21.1)}
 
     # Verify in DB
     with get_db() as session:
