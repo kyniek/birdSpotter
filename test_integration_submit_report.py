@@ -149,7 +149,7 @@ def load_cities_from_geojson():
     for feature in data.get("features", []):
         props = feature.get("properties", {})
         place = props.get("place", "")
-        name_pl = props.get("name:pl", "")
+        name_pl = props.get("name:pl") or props.get("name")
         if place in ("city", "town") and name_pl:
             geo = feature.get("geometry", {})
             coords = geo.get("coordinates", [])

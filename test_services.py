@@ -7,7 +7,7 @@ from app.neo4j_client import get_db, driver
 from app.services import (
     identify_or_create_flock,
     add_report_and_get_flock_info,
-    predict_city,
+    predict_cities,
     get_coordinators_for_flock,
 )
 
@@ -176,30 +176,41 @@ def test_add_report_returns_last_two_points():
     assert len(last_points) == 2
 
 
-# ── City prediction tests ─────────────────────────────────────────────────────
+# ── City prediction tests ─────────────────────────────────────────────────
 
-def test_predict_city_no_cities():
-    """With no cities in DB, predict_city returns None."""
-    result = predict_city(52.0, 21.0, 0)
-    assert result is None
+def test_predict_cities_no_cities():
+    """With no cities in DB, predict_cities returns empty list."""
+    result = predict_cities(52.0, 21.0, 0)
+    assert result == []
 
 
-def test_predict_city_with_cities_in_bearing(test_cities):
-    """Cities in bearing sector should be returned; closest wins."""
+def test_predict_cities_with_cities_in_bearing(test_cities):
+    """Cities in bearing sector should be returned, sorted by distance."""
     # Flock moving north from Warsaw (52.0, 21.0)
     # NorthCity is at (55.0, 21.0) → bearing ~0°
     bearing = 0.0
-    result = predict_city(52.0, 21.0, bearing)
-    assert result is not None
-    assert result[0] == "NorthCity"
+    result = predict_cities(52.0, 21.0, bearing)
+    assert len(result) > 0
+    # Closest city should be first
+    assert result[0][0] == "NorthCity"
 
 
-def test_predict_city_no_city_in_tolerance():
-    """If no city is within bearing tolerance, return None."""
+def test_predict_cities_no_city_in_tolerance():
+    """If no city is within bearing tolerance, return empty list."""
     bearing = 45.0  # NE — no city in that direction from (52, 21)
-    result = predict_city(52.0, 21.0, bearing)
+    result = predict_cities(52.0, 21.0, bearing)
     # Might or might not find one depending on city positions; just check it doesn't crash
-    assert result is None or isinstance(result[0], str)
+    assert isinstance(result, list)
+
+
+def test_predict_cities_returns_multiple(test_cities):
+    """Multiple cities in the same bearing sector should all be returned."""
+    # Flock moving north from Warsaw (52.0, 21.0)
+    bearing = 0.0
+    result = predict_cities(52.0, 21.0, bearing)
+    # NorthCity is closest; check that results are sorted by distance
+    for i in range(len(result) - 1):
+        assert result[i][1] <= result[i + 1][1]
 
 
 # ── Coordinator tests ─────────────────────────────────────────────────────────

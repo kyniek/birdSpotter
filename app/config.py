@@ -45,6 +45,12 @@ class Settings(BaseSettings):
     silence_window_hours: int = 10
     bearing_tolerance_deg: float = 30.0
 
+    # Notification thresholds (cumulative report counts)
+    notification_threshold_level1: int = 1
+    notification_threshold_level2: int = 5
+    notification_threshold_level3: int = 25
+    notification_threshold_level4: int = 100
+
     model_config = {"env_file": ".env", "env_file_encoding": "utf-8"}
 
     @classmethod

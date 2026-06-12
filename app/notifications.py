@@ -13,7 +13,7 @@ def send_notification(
     report_id: str,
     lat: float,
     lon: float,
-    city_name: str | None = None,
+    predicted_cities: list[tuple[str, float]] | None = None,
     eta_hours: float | None = None,
 ) -> None:
     """Send email notification to all coordinators for *flock_id*.
@@ -31,8 +31,11 @@ def send_notification(
         f"Report ID: {report_id}",
         f"Location: {lat:.4f}, {lon:.4f}",
     ]
-    if city_name:
-        body_lines.append(f"Predicted city: {city_name}")
+    if predicted_cities:
+        city_list = ", ".join(
+            f"{name} ({dist:.1f} km)" for name, dist in predicted_cities
+        )
+        body_lines.append(f"Predicted cities: {city_list}")
     if eta_hours is not None:
         body_lines.append(f"ETA: {eta_hours:.2f} hours")
 

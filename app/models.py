@@ -21,3 +21,4 @@ class ReportResponse(BaseModel):
     report_id: str
     flock_id: str
     message: str
+    predicted_cities: list[tuple[str, float]] = []
