@@ -138,13 +138,6 @@ def _clean_test_db():
         s.run("MATCH (n) DETACH DELETE n")
 
 
-@pytest.fixture(autouse=True)
-def _clean_before_each(neo4j_test_driver):
-    _clean_test_db()
-    yield
-    _clean_test_db()
-
-
 def load_cities_from_geojson():
     """Read Polish cities from export.geojson and create City nodes in Neo4j."""
     geojson_path = Path(__file__).parent / "export.geojson"
@@ -175,10 +168,17 @@ def load_cities_from_geojson():
 
 @pytest.fixture(scope="session", autouse=True)
 def seed_cities(neo4j_test_driver):
-    """Load cities once per test session."""
+    """Load cities once per test session (on fresh container)."""
     count = load_cities_from_geojson()
     assert count > 0, "No cities loaded from export.geojson"
     yield count
+
+
+@pytest.fixture(autouse=True)
+def _clean_after_each(neo4j_test_driver):
+    """Clean DB after each test."""
+    yield
+    _clean_test_db()
 
 
 # ── Helpers ────────────────────────────────────────────────────────────────────
@@ -203,12 +203,25 @@ class TestSubmitReportIntegration:
     _original_get_db = None
 
     @pytest.fixture(autouse=True)
-    def _patch_services_to_test_db(self, neo4j_test_driver):
-        """Replace get_db in services module with get_test_db for this test."""
+    def _setup_test_db(self, neo4j_test_driver, seed_cities):
+        """Clean DB, load cities, patch get_db — runs before each test.
+
+        seed_cities ensures cities are loaded once per session.  We
+        re-clean + reload here so every test starts from a known state.
+        """
         import app.services as services_module
+
+        # Clean + seed for this test
+        _clean_test_db()
+        load_cities_from_geojson()
+
+        # Patch services to use test driver
         TestSubmitReportIntegration._original_get_db = services_module.get_db
         services_module.get_db = get_test_db
+
         yield
+
+        # Restore
         services_module.get_db = TestSubmitReportIntegration._original_get_db
 
     def test_submit_report_creates_new_flock(self, seed_cities):
